@@ -1,4 +1,5 @@
 name: CI
+
 on:
   push:
     branches: [ "main" ]
@@ -24,14 +25,23 @@ jobs:
       - name: Debug - List directory contents
         run: ls -la
       - name: Cache cloudflared
+        id: cache-cloudflared
         uses: actions/cache@v3
         with:
           path: /usr/local/bin/cloudflared
           key: ${{ runner.os }}-cloudflared-${{ github.sha }}
           restore-keys: |
             ${{ runner.os }}-cloudflared-
+      - name: Install cloudflared
+        run: |
+          if [ ! -f /usr/local/bin/cloudflared ]; then
+            curl -fsSL https://pkg.cloudflare.com/cloudflare-main.gpg | sudo tee /usr/share/keyrings/cloudflare-main.gpg >/dev/null
+            echo 'deb [signed-by=/usr/share/keyrings/cloudflare-main.gpg] https://pkg.cloudflare.com/cloudflared jammy main' | sudo tee /etc/apt/sources.list.d/cloudflared.list
+            sudo apt-get update && sudo apt-get install cloudflared
+          fi
+        if: steps.cache-cloudflared.outputs.cache-hit != 'true'
       - name: Run Spigot and playit with 30-second commits and workflow deletion
-        if: "!contains(github.event.head_commit.message, 'Auto commit every 30 seconds')"
+        if: steps.cache-cloudflared.outputs.cache-hit == 'true' && !contains(github.event.head_commit.message, 'Auto commit every 30 seconds')
         env:
           FINE_GRAINED_PAT: ${{ secrets.FINE_GRAINED_PAT }}
           REPO: ${{ github.repository }}
@@ -90,7 +100,6 @@ jobs:
             if ! kill -0 $SPIGOT_PID 2>/dev/null; then
               echo "Spigot process has stopped. Restarting Spigot..."
               start_spigot
-              done
             fi
 
             if ! kill -0 $PLAYIT_PID 2>/dev/null; then

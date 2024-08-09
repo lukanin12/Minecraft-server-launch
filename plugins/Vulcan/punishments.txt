@@ -263,3 +263,56 @@ Potion Effects: []
 ---------------------------------------------------------------------------
 
 
+--------------[ kons0las was punished for Improbable (Type B) ]--------------
+
+Location:
+ - World: world
+ - X: -1119.063794627953
+ - Y: 68.82099999427795
+ - Z: -282.25909319327445
+
+Information:
+ - UUID: bc4f5a10-e49d-4b95-b50e-5e5b108166dd
+ - Keep Alive Ping: 0
+ - Transaction Ping: 332
+ - Server TPS: 20
+ - Sensitivity: 63
+ - Gamemode: SURVIVAL
+ - Client Brand: Unresolved
+ - Vehicle: null
+ - Version: 1.8
+ - Last Damage: 30.6 seconds ago
+
+Total Violations: 32
+ - Combat Violations: 0
+ - Movement Violations: 31
+ - Player Violations: 1
+
+Misc Information:
+ - Since Teleport Ticks: 4
+ - Since Riptide Ticks: 200
+ - Flying Delay: 45
+ - Since Velocity Ticks: 612
+ - Since Firework Ticks: 535
+ - Ticks Existed: 512
+ - Since Vehicle Ticks: 435
+ - Since Liquid Ticks: 435
+ - Queued Transactions: 1
+ - Joined: 24 seconds ago
+ - Holding Item: ItemStack{AIR x 0}
+
+All Violations:
+ - Flight (Type B) [VL: 1] (Invalid Y-Axis movement.)
+ - Flight (Type C) [VL: 1] (Invalid Y-Axis movement.)
+ - Jump (Type A) [VL: 1] (Invalid jump motion.)
+ - Speed (Type A) [VL: 11] (Invalid friction.)
+ - Speed (Type C) [VL: 10] (Moving too quickly in the air.)
+ - Strafe (Type A) [VL: 7] (Moving incorrectly in the air.)
+ - Improbable (Type B) [VL: 1] (Too many combined movement violations.)
+
+Blocks Nearby: [AIR, STONE, STONE, STEP, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, STEP, STEP, STEP, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, STEP, STEP, STEP, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR]
+Entities Nearby: []
+Potion Effects: []
+---------------------------------------------------------------------------
+
+

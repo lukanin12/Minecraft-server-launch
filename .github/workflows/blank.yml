@@ -39,7 +39,7 @@ jobs:
           key: ${{ runner.os }}-cloudflared-${{ github.sha }}
           restore-keys: |
             ${{ runner.os }}-cloudflared-
-
+        if: steps.cache-cloudflared.outputs.cache-hit == 'false'
       - name: Install cloudflared
         run: |
           if [ ! -f /usr/local/bin/cloudflared ]; then

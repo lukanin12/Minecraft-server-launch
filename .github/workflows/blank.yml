@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0 
+          fetch-depth: 0
           token: ${{ secrets.FINE_GRAINED_PAT }}
       - name: Set up OpenJDK 8
         uses: actions/setup-java@v3
@@ -28,7 +28,7 @@ jobs:
         id: cache-cloudflared
         uses: actions/cache@v3
         with:
-          path: /usr/local/bin/cloudflared
+          path: /usr/local/bin/
           key: ${{ runner.os }}-cloudflared-${{ github.sha }}
           restore-keys: |
             ${{ runner.os }}-cloudflared-
@@ -39,7 +39,10 @@ jobs:
             echo 'deb [signed-by=/usr/share/keyrings/cloudflare-main.gpg] https://pkg.cloudflare.com/cloudflared jammy main' | sudo tee /etc/apt/sources.list.d/cloudflared.list
             sudo apt-get update && sudo apt-get install cloudflared
           fi
-        # Only run if cloudflared was not restored from cache
+      - name: Debug - Verify cloudflared existence
+          run:|
+            ls -la /usr/local/bin/cloudflared
+            whereis cloudflared
         if: steps.cache-cloudflared.outputs.cache-hit != 'true'
       - name: Run Spigot and playit with 30-second commits and workflow deletion
         if: steps.cache-cloudflared.outputs.cache-hit == 'true' && !contains(github.event.head_commit.message, 'Auto commit every 30 seconds')

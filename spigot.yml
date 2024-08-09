@@ -75,9 +75,35 @@ world-settings:
     verbose: true
     chunks-per-tick: 650
     clear-tick-list: false
-    merge-radius:
-      exp: 3.0
-      item: 2.5
+    mob-spawn-range: 4
+    nerf-spawner-mobs: false
+    growth:
+      cactus-modifier: 100
+      cane-modifier: 100
+      melon-modifier: 100
+      mushroom-modifier: 100
+      pumpkin-modifier: 100
+      sapling-modifier: 100
+      wheat-modifier: 100
+      netherwart-modifier: 100
+      twistingvines-modifier: 100
+      weepingvines-modifier: 100
+      cavevines-modifier: 100
+      beetroot-modifier: 100
+      carrot-modifier: 100
+      potato-modifier: 100
+      vine-modifier: 100
+      cocoa-modifier: 100
+      bamboo-modifier: 100
+      sweetberry-modifier: 100
+      kelp-modifier: 100
+    entity-activation-range:
+      animals: 32
+      monsters: 32
+      misc: 16
+      raiders: 48
+      tick-inactive-villagers: true
+      ignore-spectators: false
     entity-tracking-range:
       players: 48
       animals: 48
@@ -106,34 +132,9 @@ world-settings:
       sprint-multiplier: 0.1
       other-multiplier: 0.0
     max-tnt-per-tick: 100
-    growth:
-      cactus-modifier: 100
-      cane-modifier: 100
-      melon-modifier: 100
-      mushroom-modifier: 100
-      pumpkin-modifier: 100
-      sapling-modifier: 100
-      wheat-modifier: 100
-      netherwart-modifier: 100
-      twistingvines-modifier: 100
-      weepingvines-modifier: 100
-      cavevines-modifier: 100
-      beetroot-modifier: 100
-      carrot-modifier: 100
-      potato-modifier: 100
-      vine-modifier: 100
-      cocoa-modifier: 100
-      bamboo-modifier: 100
-      sweetberry-modifier: 100
-      kelp-modifier: 100
-    entity-activation-range:
-      animals: 32
-      monsters: 32
-      misc: 16
-      raiders: 48
-      tick-inactive-villagers: true
-      ignore-spectators: false
-    nerf-spawner-mobs: false
+    merge-radius:
+      exp: 3.0
+      item: 2.5
     anti-xray:
       enabled: true
       engine-mode: 1
@@ -154,7 +155,6 @@ world-settings:
       replace-blocks:
       - 1
       - 5
-    mob-spawn-range: 4
     item-despawn-rate: 6000
     arrow-despawn-rate: 1200
     enable-zombie-pigmen-portal-spawns: true

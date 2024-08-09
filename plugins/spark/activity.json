@@ -5,6 +5,19 @@
       "name": "Briiqn",
       "uniqueId": "cb42ff6a-36b7-4ad8-8c9b-74d28b7b8973"
     },
+    "time": 1723240835542,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/AWQWmZChIy"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Briiqn",
+      "uniqueId": "cb42ff6a-36b7-4ad8-8c9b-74d28b7b8973"
+    },
     "time": 1723237982098,
     "type": "Profiler",
     "data": {

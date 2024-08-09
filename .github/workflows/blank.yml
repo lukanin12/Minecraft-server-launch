@@ -40,9 +40,10 @@ jobs:
             sudo apt-get update && sudo apt-get install cloudflared
           fi
       - name: Debug - Verify cloudflared existence
-          run:|
-            ls -la /usr/local/bin/cloudflared
-            whereis cloudflared
+        run: |
+          ls -la /usr/local/bin/cloudflared
+          whereis cloudflared
+        
         if: steps.cache-cloudflared.outputs.cache-hit != 'true'
       - name: Run Spigot and playit with 30-second commits and workflow deletion
         if: steps.cache-cloudflared.outputs.cache-hit == 'true' && !contains(github.event.head_commit.message, 'Auto commit every 30 seconds')

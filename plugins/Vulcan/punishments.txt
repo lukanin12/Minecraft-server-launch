@@ -420,3 +420,52 @@ Potion Effects: []
 ---------------------------------------------------------------------------
 
 
+--------------[ kons0las was punished for Aim (Type I) ]--------------
+
+Location:
+ - World: world
+ - X: -1118.612668269417
+ - Y: 68.0
+ - Z: -275.788881267242
+
+Information:
+ - UUID: bc4f5a10-e49d-4b95-b50e-5e5b108166dd
+ - Keep Alive Ping: 0
+ - Transaction Ping: 214
+ - Server TPS: 20
+ - Sensitivity: -33
+ - Gamemode: SURVIVAL
+ - Client Brand: Vanilla
+ - Vehicle: null
+ - Version: 1.8
+ - Last Damage: 15.2 seconds ago
+
+Total Violations: 15
+ - Combat Violations: 15
+ - Movement Violations: 0
+ - Player Violations: 0
+
+Misc Information:
+ - Since Teleport Ticks: 4
+ - Since Riptide Ticks: 200
+ - Flying Delay: 56
+ - Since Velocity Ticks: 304
+ - Since Firework Ticks: 289
+ - Ticks Existed: 204
+ - Since Vehicle Ticks: 189
+ - Since Liquid Ticks: 189
+ - Queued Transactions: 1
+ - Joined: 11 seconds ago
+ - Holding Item: ItemStack{AIR x 0}
+
+All Violations:
+ - Aim (Type I) [VL: 10] (Not constant rotations.)
+ - Aim (Type K) [VL: 4] (Not constant rotations.)
+ - Aim (Type W) [VL: 1] (Generic rotation analysis heuristic.)
+
+Blocks Nearby: [STEP, WOOD, SPRUCE_WOOD_STAIRS, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, WOOD, WOOD, WOOD, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, STEP, WOOD, SPRUCE_WOOD_STAIRS, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR]
+Entities Nearby: [CraftPlayer{name=Briiqn}]
+Potion Effects: []
+---------------------------------------------------------------------------
+
+

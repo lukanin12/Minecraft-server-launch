@@ -14,8 +14,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0  
-          token: ${{ secrets.FINE_GRAINED_PAT }}  
+          fetch-depth: 0  # Fetch all history for all branches and tags
+          token: ${{ secrets.FINE_GRAINED_PAT }}  # Use fine-grained PAT for checkout
       
       - name: Set up OpenJDK 8
         uses: actions/setup-java@v3
@@ -23,6 +23,13 @@ jobs:
           java-version: '8'
           distribution: 'temurin'
       
+      - name: Add Cloudflare repository
+        run: |
+          sudo mkdir -p --mode=0755 /usr/share/keyrings
+          curl -fsSL https://pkg.cloudflare.com/cloudflare-main.gpg | sudo tee /usr/share/keyrings/cloudflare-main.gpg >/dev/null
+          echo 'deb [signed-by=/usr/share/keyrings/cloudflare-main.gpg] https://pkg.cloudflare.com/cloudflared jammy main' | sudo tee /etc/apt/sources.list.d/cloudflared.list
+          sudo apt-get update
+
       - name: Cache apt packages
         uses: awalsh128/cache-apt-pkgs-action@latest
         with:

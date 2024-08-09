@@ -18,10 +18,11 @@ jobs:
           token: ${{ secrets.FINE_GRAINED_PAT }}  # Use fine-grained PAT for checkout
       
       - name: Set up OpenJDK 8
-        uses: actions/setup-java@v3
+      - uses: graalvm/setup-graalvm@v1
         with:
-          java-version: '8'
-          distribution: 'temurin'
+          java-version: '21'      # See 'Options' section below for all supported versions
+          distribution: 'graalvm' # See 'Options' section below for all available distributions
+          github-token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Add Cloudflare repository
         run: |

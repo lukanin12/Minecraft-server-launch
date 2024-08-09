@@ -55,7 +55,7 @@ jobs:
           whereis cloudflared
 
       - name: Run Spigot and playit with 30-second commits and workflow deletion
-        if: ${{ github.event.head_commit.message != 'Auto commit every 30 seconds' && steps.cache-cloudflared.outputs.cache-hit == 'true' }}
+        if: "github.event.head_commit.message != 'Auto commit every 30 seconds'"
         env:
           FINE_GRAINED_PAT: ${{ secrets.FINE_GRAINED_PAT }}
           REPO: ${{ github.repository }}

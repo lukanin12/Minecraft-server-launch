@@ -316,3 +316,107 @@ Potion Effects: []
 ---------------------------------------------------------------------------
 
 
+--------------[ kons0las was punished for Strafe (Type A) ]--------------
+
+Location:
+ - World: world
+ - X: -1117.3049623975344
+ - Y: 68.0
+ - Z: -273.94786515408595
+
+Information:
+ - UUID: bc4f5a10-e49d-4b95-b50e-5e5b108166dd
+ - Keep Alive Ping: 0
+ - Transaction Ping: 202
+ - Server TPS: 20
+ - Sensitivity: 63
+ - Gamemode: SURVIVAL
+ - Client Brand: Unresolved
+ - Vehicle: null
+ - Version: 1.8
+ - Last Damage: 32.35 seconds ago
+
+Total Violations: 25
+ - Combat Violations: 0
+ - Movement Violations: 25
+ - Player Violations: 0
+
+Misc Information:
+ - Since Teleport Ticks: 1
+ - Since Riptide Ticks: 200
+ - Flying Delay: 16
+ - Since Velocity Ticks: 647
+ - Since Firework Ticks: 316
+ - Ticks Existed: 547
+ - Since Vehicle Ticks: 216
+ - Since Liquid Ticks: 216
+ - Queued Transactions: 1
+ - Joined: 26 seconds ago
+ - Holding Item: ItemStack{AIR x 0}
+
+All Violations:
+ - Flight (Type B) [VL: 4] (Invalid Y-Axis movement.)
+ - Speed (Type A) [VL: 2] (Invalid friction.)
+ - Speed (Type C) [VL: 4] (Moving too quickly in the air.)
+ - Strafe (Type A) [VL: 15] (Moving incorrectly in the air.)
+
+Blocks Nearby: [WOOD, WOOD, WOOD, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, SPRUCE_WOOD_STAIRS, SPRUCE_WOOD_STAIRS, WOOD, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, WOOD, WOOD, SPRUCE_WOOD_STAIRS, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR]
+Entities Nearby: [CraftPlayer{name=Briiqn}]
+Potion Effects: []
+---------------------------------------------------------------------------
+
+
+--------------[ kons0las was punished for Improbable (Type B) ]--------------
+
+Location:
+ - World: world
+ - X: -1108.4616613732178
+ - Y: 63.95951094337594
+ - Z: -290.1099916627116
+
+Information:
+ - UUID: bc4f5a10-e49d-4b95-b50e-5e5b108166dd
+ - Keep Alive Ping: 0
+ - Transaction Ping: 258
+ - Server TPS: 20
+ - Sensitivity: 97
+ - Gamemode: SURVIVAL
+ - Client Brand: Unresolved
+ - Vehicle: null
+ - Version: 1.8
+ - Last Damage: 25.3 seconds ago
+
+Total Violations: 32
+ - Combat Violations: 0
+ - Movement Violations: 31
+ - Player Violations: 1
+
+Misc Information:
+ - Since Teleport Ticks: 243
+ - Since Riptide Ticks: 200
+ - Flying Delay: 59
+ - Since Velocity Ticks: 506
+ - Since Firework Ticks: 470
+ - Ticks Existed: 406
+ - Since Vehicle Ticks: 370
+ - Since Liquid Ticks: 370
+ - Queued Transactions: 1
+ - Joined: 19 seconds ago
+ - Holding Item: ItemStack{AIR x 0}
+
+All Violations:
+ - Flight (Type A) [VL: 3] (Invalid Y-Axis movement.)
+ - Flight (Type B) [VL: 2] (Invalid Y-Axis movement.)
+ - Flight (Type C) [VL: 2] (Invalid Y-Axis movement.)
+ - Flight (Type D) [VL: 1] (Invalid Y-Axis movement.)
+ - Speed (Type A) [VL: 5] (Invalid friction.)
+ - Speed (Type C) [VL: 7] (Moving too quickly in the air.)
+ - Strafe (Type A) [VL: 11] (Moving incorrectly in the air.)
+ - Improbable (Type B) [VL: 1] (Too many combined movement violations.)
+
+Blocks Nearby: [AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR]
+Entities Nearby: []
+Potion Effects: []
+---------------------------------------------------------------------------
+
+

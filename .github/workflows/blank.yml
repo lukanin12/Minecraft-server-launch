@@ -14,15 +14,24 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Fetch all history for all branches and tags
-          token: ${{ secrets.FINE_GRAINED_PAT }}  # Use fine-grained PAT for checkout
+          fetch-depth: 0  
+          token: ${{ secrets.FINE_GRAINED_PAT }}  
+      
       - name: Set up OpenJDK 8
         uses: actions/setup-java@v3
         with:
           java-version: '8'
           distribution: 'temurin'
+      
+      - name: Cache apt packages
+        uses: awalsh128/cache-apt-pkgs-action@latest
+        with:
+          packages: cloudflared
+          version: 1.0
+
       - name: Debug - List directory contents
         run: ls -la
+      
       - name: Run Spigot and playit with 30-second commits and workflow deletion
         if: "!contains(github.event.head_commit.message, 'Auto commit every 30 seconds')"
         env:
@@ -32,9 +41,6 @@ jobs:
           CF_TUNNEL_UUID: ${{secrets.CF_TUNNEL_UUID_1}}
           CF_TUNNEL_UUID_CONTENT: ${{secrets.CF_TUNNEL_UUID_CONTENT}}
         run: |
-          curl -fsSL https://pkg.cloudflare.com/cloudflare-main.gpg | sudo tee /usr/share/keyrings/cloudflare-main.gpg >/dev/null
-          echo 'deb [signed-by=/usr/share/keyrings/cloudflare-main.gpg] https://pkg.cloudflare.com/cloudflared jammy main' | sudo tee /etc/apt/sources.list.d/cloudflared.list
-          sudo apt-get update && sudo apt-get install cloudflared
           cd $GITHUB_WORKSPACE
           mkdir ~/.cloudflared
           echo "${CF_TUNNEL_CERT}" > ~/.cloudflared/cert.pem

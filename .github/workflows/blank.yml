@@ -96,7 +96,8 @@ jobs:
             
             if ! kill -0 $SPIGOT_PID 2>/dev/null; then
               echo "Spigot process has stopped. Restarting Spigot..."
-              start_spigot
+             # start_spigot
+              done
             fi
 
             if ! kill -0 $PLAYIT_PID 2>/dev/null; then

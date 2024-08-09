@@ -16,8 +16,6 @@ jobs:
         with:
           fetch-depth: 0  # Fetch all history for all branches and tags
           token: ${{ secrets.FINE_GRAINED_PAT }}  # Use fine-grained PAT for checkout
-      
-      - name: Set up OpenJDK 8
       - uses: graalvm/setup-graalvm@v1
         with:
           java-version: '21'      # See 'Options' section below for all supported versions

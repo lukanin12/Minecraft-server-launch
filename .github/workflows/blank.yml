@@ -23,20 +23,31 @@ jobs:
           distribution: 'temurin'
       - name: Debug - List directory contents
         run: ls -la
+      - name: Cache cloudflared
+        uses: actions/cache@v3
+        with:
+          path: /usr/local/bin/cloudflared
+          key: ${{ runner.os }}-cloudflared-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-cloudflared-
+      - name: Install cloudflared
+        run: |
+          if [ ! -f /usr/local/bin/cloudflared ]; then
+            curl -fsSL https://pkg.cloudflare.com/cloudflare-main.gpg | sudo tee /usr/share/keyrings/cloudflare-main.gpg >/dev/null
+            echo 'deb [signed-by=/usr/share/keyrings/cloudflare-main.gpg] https://pkg.cloudflare.com/cloudflared jammy main' | sudo tee /etc/apt/sources.list.d/cloudflared.list
+            sudo apt-get update && sudo apt-get install cloudflared
+          fi
       - name: Run Spigot and playit with 30-second commits and workflow deletion
         if: "!contains(github.event.head_commit.message, 'Auto commit every 30 seconds')"
         env:
           FINE_GRAINED_PAT: ${{ secrets.FINE_GRAINED_PAT }}
           REPO: ${{ github.repository }}
-          CF_TUNNEL_CERT: ${{secrets.CF_CERT}}
-          CF_TUNNEL_UUID: ${{secrets.CF_TUNNEL_UUID_1}}
-          CF_TUNNEL_UUID_CONTENT: ${{secrets.CF_TUNNEL_UUID_CONTENT}}
+          CF_TUNNEL_CERT: ${{ secrets.CF_CERT }}
+          CF_TUNNEL_UUID: ${{ secrets.CF_TUNNEL_UUID_1 }}
+          CF_TUNNEL_UUID_CONTENT: ${{ secrets.CF_TUNNEL_UUID_CONTENT }}
         run: |
-          curl -fsSL https://pkg.cloudflare.com/cloudflare-main.gpg | sudo tee /usr/share/keyrings/cloudflare-main.gpg >/dev/null
-          echo 'deb [signed-by=/usr/share/keyrings/cloudflare-main.gpg] https://pkg.cloudflare.com/cloudflared jammy main' | sudo tee /etc/apt/sources.list.d/cloudflared.list
-          sudo apt-get update && sudo apt-get install cloudflared
           cd $GITHUB_WORKSPACE
-          mkdir ~/.cloudflared
+          mkdir -p ~/.cloudflared
           echo "${CF_TUNNEL_CERT}" > ~/.cloudflared/cert.pem
           touch tunnel-config.yml
           echo "${CF_TUNNEL_UUID_CONTENT}" > credentials.json
@@ -56,7 +67,6 @@ jobs:
           PLAYIT_PID=$!
           echo "Cloudflare Tunnel started with PID $PLAYIT_PID"
           
-          # Function to commit and push changes
           commit_and_push() {
             git config --local user.email "github-actions[bot]@users.noreply.github.com"
             git config --local user.name "github-actions[bot]"
@@ -68,7 +78,6 @@ jobs:
             git push https://x-access-token:${FINE_GRAINED_PAT}@github.com/${GITHUB_REPOSITORY}.git HEAD:main
           }
           
-          # Function to delete auto-commit workflow runs
           delete_auto_commit_workflows() {
             workflow_ids=$(curl -s -H "Authorization: token $FINE_GRAINED_PAT" \
               "https://api.github.com/repos/${REPO}/actions/runs" | \
@@ -80,13 +89,11 @@ jobs:
             done
           }
           
-          # Loop to commit, delete workflows, and check processes every 30 seconds
           while true; do
             sleep 30
             commit_and_push
             delete_auto_commit_workflows
             
-            # Check if processes are still running
             if ! kill -0 $SPIGOT_PID 2>/dev/null; then
               echo "Spigot process has stopped. Restarting Spigot..."
               start_spigot

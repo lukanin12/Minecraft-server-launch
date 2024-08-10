@@ -16,15 +16,15 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1723262807416
-  login: 1723262801966
+  logout: 1723263001966
+  login: 1723262991366
 money: '0'
 last-account-name: Bxrl
 logoutlocation:
   world: 6db25809-c288-4f61-ad52-b0daa6a42e35
   world-name: world
-  x: -1118.4694604454467
+  x: -1118.0485668923707
   y: 67.5
-  z: -278.0188186773304
-  yaw: 179.39837646484375
-  pitch: 12.944537162780762
+  z: -278.2215117424041
+  yaw: 159.59840393066406
+  pitch: 8.444535255432129

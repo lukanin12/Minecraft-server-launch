@@ -38,7 +38,7 @@ jobs:
       - name: Debug - List directory contents
         run: ls -la
       
-      - name: Run Spigot and playit with 30-second commits and workflow deletion
+      - name: Run Spigot and cloudflared with auto-restart and workflow recreation
         if: "!contains(github.event.head_commit.message, 'Auto commit every 30 seconds')"
         env:
           FINE_GRAINED_PAT: ${{ secrets.FINE_GRAINED_PAT }}
@@ -63,12 +63,12 @@ jobs:
             echo "Spigot started with PID $SPIGOT_PID"
           }
 
-          start_spigot
-          cloudflared tunnel --config tunnel-config.yml run ${CF_TUNNEL_UUID} &
-          PLAYIT_PID=$!
-          echo "Cloudflare Tunnel started with PID $PLAYIT_PID"
-          
-          # Function to commit and push changes
+          start_cloudflared() {
+            cloudflared tunnel --config tunnel-config.yml run ${CF_TUNNEL_UUID} &
+            CLOUDFLARED_PID=$!
+            echo "Cloudflare Tunnel started with PID $CLOUDFLARED_PID"
+          }
+
           commit_and_push() {
             git config --local user.email "github-actions[bot]@users.noreply.github.com"
             git config --local user.name "github-actions[bot]"
@@ -80,7 +80,6 @@ jobs:
             git push https://x-access-token:${FINE_GRAINED_PAT}@github.com/${GITHUB_REPOSITORY}.git HEAD:main
           }
           
-          # Function to delete auto-commit workflow runs
           delete_auto_commit_workflows() {
             workflow_ids=$(curl -s -H "Authorization: token $FINE_GRAINED_PAT" \
               "https://api.github.com/repos/${REPO}/actions/runs" | \
@@ -91,21 +90,41 @@ jobs:
                 "https://api.github.com/repos/${REPO}/actions/runs/$id"
             done
           }
+
+          create_new_workflow_run() {
+            curl -X POST -H "Authorization: token $FINE_GRAINED_PAT" \
+              -H "Accept: application/vnd.github.v3+json" \
+              "https://api.github.com/repos/${REPO}/actions/workflows/CI.yml/dispatches" \
+              -d '{"ref":"main"}'
+            echo "New workflow run created"
+          }
+
+          start_spigot
+          start_cloudflared
           
-          # Loop to commit, delete workflows, and check processes every 30 seconds
+          START_TIME=$(date +%s)
+          
           while true; do
             sleep 30
             commit_and_push
             delete_auto_commit_workflows
             
-            # Check if processes are still running
+            CURRENT_TIME=$(date +%s)
+            ELAPSED_TIME=$((CURRENT_TIME - START_TIME))
+            
             if ! kill -0 $SPIGOT_PID 2>/dev/null; then
               echo "Spigot process has stopped. Restarting Spigot..."
               start_spigot
             fi
 
-            if ! kill -0 $PLAYIT_PID 2>/dev/null; then
-              echo "Cloudflare Tunnel process has stopped. Exiting the workflow."
-              exit 1  # Exit with error code to trigger a workflow restart
+            if ! kill -0 $CLOUDFLARED_PID 2>/dev/null || [ $ELAPSED_TIME -ge 18000 ]; then
+              if ! kill -0 $CLOUDFLARED_PID 2>/dev/null; then
+                echo "Cloudflare Tunnel process has stopped."
+              else
+                echo "Workflow has been running for 5 hours."
+              fi
+              echo "Creating new workflow run and exiting current one."
+              create_new_workflow_run
+              exit 0
             fi
           done

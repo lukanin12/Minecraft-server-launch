@@ -26,13 +26,13 @@ npc:
         textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTcyMzE0NTg1MTgzNCwKICAicHJvZmlsZUlkIiA6ICJkNjYyYTJkYzMwNWM0YmJjOWYyZjExYjg1ZmY1NTU5OSIsCiAgInByb2ZpbGVOYW1lIiA6ICJTa3l3YXJzIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzE2ZTQzYzRhNjUyNGU5YWU4MjdjMGI2MGQzOTI3ZDU2YTVjYzMxNjE3M2RlM2IwOGEwYmI0ODYyMTVmNGMwODYiCiAgICB9LAogICAgIkNBUEUiIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2U3ZGZlYTE2ZGM4M2M5N2RmMDFhMTJmYWJiZDEyMTYzNTljMGNkMGVhNDJmOTk5OWI2ZTk3YzU4NDk2M2U5ODAiCiAgICB9CiAgfQp9
         updateSkins: false
       location:
-        bodyYaw: -5.656563
+        bodyYaw: 4.4052887
         world: world
-        x: '-1121.5222'
-        y: '68.5'
-        z: '-283.1375'
-        yaw: '-5.6566'
-        pitch: '13.4608'
+        x: '-1121.5'
+        y: '69.0'
+        z: '-283.5'
+        yaw: '4.4053'
+        pitch: '29.5893'
       type: PLAYER
       owner:
         uuid: be317d90-8585-31d4-b983-cc75820d94de
@@ -73,7 +73,7 @@ npc:
         randomYawRange:
           '0': 0.0
           '1': 360.0
-    traitnames: rotationtrait,skintrait,spawned,location,scoreboardtrait,inventory,owner,commandtrait,type,mounttrait,lookclose
+    traitnames: scoreboardtrait,skintrait,lookclose,owner,type,spawned,inventory,mounttrait,location,rotationtrait,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -97,13 +97,13 @@ npc:
       owner:
         uuid: be317d90-8585-31d4-b983-cc75820d94de
       location:
-        bodyYaw: 359.72653
+        bodyYaw: -5.3878174
         world: world
-        x: '-1115.5784'
-        y: '68.5'
-        z: '-282.9159'
-        yaw: '359.7265'
-        pitch: '-0.5486'
+        x: '-1115.5'
+        y: '69.0'
+        z: '-283.5'
+        yaw: '-5.3878'
+        pitch: '36.7812'
       commandtrait:
         cost: -1.0
         executionMode: LINEAR
@@ -120,7 +120,28 @@ npc:
             globalcooldown: 0
             n: -1
             delay: 0
-    traitnames: skintrait,spawned,location,scoreboardtrait,owner,inventory,commandtrait,type,mounttrait
+      lookclose:
+        range: '5.0'
+        disablewhilenavigating: true
+        enabled: false
+        enableRandomLook: false
+        headonly: false
+        perplayer: false
+        randomLookDelay: 60
+        randomPitchRange:
+          '0': 0.0
+          '1': 0.0
+        randomSwitchTargets: false
+        randomYawRange:
+          '0': 0.0
+          '1': 360.0
+        realisticlooking: false
+        targetnpcs: false
+      gravity:
+        enabled: true
+      rotationtrait:
+        globalParameters: {}
+    traitnames: scoreboardtrait,owner,skintrait,lookclose,type,spawned,inventory,gravity,mounttrait,location,rotationtrait,commandtrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -136,13 +157,13 @@ npc:
       owner:
         uuid: be6d2a29-3a11-40c4-a4fb-7b970d6aa48f
       location:
-        bodyYaw: -0.25131226
+        bodyYaw: 21.944191
         world: world
-        x: '-1118.5778'
-        y: '67.5'
-        z: '-280.0963'
-        yaw: '-0.2513'
-        pitch: '1.7556'
+        x: '-1118.5'
+        y: '68.0'
+        z: '-280.5'
+        yaw: '21.9442'
+        pitch: '-6.1308'
       skintrait:
         fetchDefaultSkin: true
         signature: UjjQIheBYevz1OJD1ri5Sv5coRrPO0H5UIdm1XeBhQsjTdfK/FEaTYr9VMNnUyyFpR+RXZvMZPvusvPsFbXK0+2NuqXf8+JGBpiRnLZCtGwULqYRHvLeW0keKUObqaNlGrJVBXQwIbpdTz0SRWZgSfSBWr+Q3k0gotV56z9Kslj4F1mKXvoatNNeJnApC7XuoIKIJoEB6KeZhpGk07HnjVwhyc2BWll3WlYosj93jBLi8I2EBmgz7scFHSWsQwXRJkNXRSaqf/1ADfju2RNQWM7/t5tpYx8RrQo98KlB/oBqW4ol5hPEQxFgZO9po/mnJoSxDjIywK8YlwGXKGOIjFdypo/mR46fs9PAh59jq5pL/kMtSvCpWejNqw8Z1tO1mUg0/+nphT6ppfbZUt3JyQ8zOlf1kDxZ31dcRWLTWaJDl65Pe2JqDpplnytEbEm8gLorbvORsxD9HJE4y6mEQ/ZAlVUCJIEMWYyZp6fMNRnWc+MUIDI5GicFIj71eWVQ4eY1SJhC7v+LB+vLQf5H7hNrMwMctubqReErsf1iUqumSjHg7HD5d3bIdFUmXPP4QM/LAKuFlHeIMzUFQpyWHTteR5u7CKLJ/hDmqDd6CNbLKUSx88Idq3iuerYvGNRrBI5duwBqcN/UQdpd4eojBVWC+wgNGqqmzyMyCCHzaQk=
@@ -167,7 +188,31 @@ npc:
       type: PLAYER
       spawned: true
       scoreboardtrait: {}
-    traitnames: skintrait,spawned,location,scoreboardtrait,owner,inventory,commandtrait,type,mounttrait
+      lookclose:
+        range: '5.0'
+        disablewhilenavigating: true
+        enabled: true
+        enableRandomLook: false
+        headonly: false
+        perplayer: false
+        randomLookDelay: 60
+        randomPitchRange:
+          '0': 0.0
+          '1': 0.0
+        randomSwitchTargets: false
+        randomYawRange:
+          '0': 0.0
+          '1': 360.0
+        realisticlooking: false
+        targetnpcs: false
+      rotationtrait:
+        globalParameters: {}
+      hologramtrait:
+        direction: BOTTOM_UP
+        lineHeight: -1.0
+      gravity:
+        enabled: true
+    traitnames: owner,skintrait,lookclose,type,spawned,location,rotationtrait,commandtrait,hologramtrait,scoreboardtrait,inventory,gravity,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false

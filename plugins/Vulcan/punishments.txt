@@ -516,3 +516,49 @@ Potion Effects: []
 ---------------------------------------------------------------------------
 
 
+--------------[ kons0las was punished for Bad Packets (Type B) ]--------------
+
+Location:
+ - World: world
+ - X: -1118.4402444475468
+ - Y: 68.0
+ - Z: -271.42270599299303
+
+Information:
+ - UUID: bc4f5a10-e49d-4b95-b50e-5e5b108166dd
+ - Keep Alive Ping: 0
+ - Transaction Ping: 167
+ - Server TPS: 20
+ - Sensitivity: 0
+ - Gamemode: SURVIVAL
+ - Client Brand: Vanilla
+ - Vehicle: null
+ - Version: 1.8
+ - Last Damage: 6.4 seconds ago
+
+Total Violations: 1
+ - Combat Violations: 0
+ - Movement Violations: 0
+ - Player Violations: 1
+
+Misc Information:
+ - Since Teleport Ticks: 128
+ - Since Riptide Ticks: 200
+ - Flying Delay: 0
+ - Since Velocity Ticks: 128
+ - Since Firework Ticks: 203
+ - Ticks Existed: 28
+ - Since Vehicle Ticks: 103
+ - Since Liquid Ticks: 103
+ - Queued Transactions: 1
+ - Joined: 0 seconds ago
+ - Holding Item: ItemStack{AIR x 0}
+
+All Violations:
+ - Bad Packets (Type B) [VL: 1] (More than 20 flying packets in a row.)
+
+Blocks Nearby: [WOOD, WOOD, WOOD, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, WOOD, STONE, WOOD, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, WOOD, WOOD, WOOD, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR]
+Potion Effects: []
+---------------------------------------------------------------------------
+
+

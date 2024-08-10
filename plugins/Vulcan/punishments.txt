@@ -609,3 +609,50 @@ Potion Effects: []
 ---------------------------------------------------------------------------
 
 
+--------------[ Bxrl was punished for Aim (Type B) ]--------------
+
+Location:
+ - World: world
+ - X: -1118.3692786542638
+ - Y: 68.0
+ - Z: -271.740566453739
+
+Information:
+ - UUID: 453aba25-b437-4a74-9a01-a5b41229e2f4
+ - Keep Alive Ping: 116
+ - Transaction Ping: 108
+ - Server TPS: 20
+ - Sensitivity: 99
+ - Gamemode: SURVIVAL
+ - Client Brand: Vanilla
+ - Vehicle: null
+ - Version: 1.8
+ - Last Damage: 251.25 seconds ago
+
+Total Violations: 8
+ - Combat Violations: 8
+ - Movement Violations: 0
+ - Player Violations: 0
+
+Misc Information:
+ - Since Teleport Ticks: 55
+ - Since Riptide Ticks: 200
+ - Flying Delay: 45
+ - Since Velocity Ticks: 5025
+ - Since Firework Ticks: 1310
+ - Ticks Existed: 4925
+ - Since Vehicle Ticks: 1210
+ - Since Liquid Ticks: 1210
+ - Queued Transactions: 1
+ - Joined: 248 seconds ago
+ - Holding Item: ItemStack{AIR x 0}
+
+All Violations:
+ - Aim (Type B) [VL: 8] (Invalid yaw change.)
+
+Blocks Nearby: [WOOD, WOOD, WOOD, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, WOOD, STONE, WOOD, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, WOOD, WOOD, WOOD, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR]
+Entities Nearby: [CraftPlayer{name=Briiqn}]
+Potion Effects: []
+---------------------------------------------------------------------------
+
+

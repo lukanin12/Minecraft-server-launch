@@ -12,6 +12,26 @@ jobs:
   build:
     runs-on: ubuntu-24.04
     steps:
+      - name: Cancel previous runs for this branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Get the current workflow run ID
+          CURRENT_RUN_ID=${{ github.run_id }}
+          
+          # Fetch workflow runs for the `main` branch
+          runs=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
+            "https://api.github.com/repos/${{ github.repository }}/actions/runs?status=in_progress&branch=main")
+          
+          # Extract run IDs to cancel
+          run_ids=$(echo "$runs" | jq -r '.workflow_runs[] | select(.id != '"$CURRENT_RUN_ID"') | .id')
+          
+          for run_id in $run_ids; do
+            echo "Canceling run $run_id"
+            curl -s -X POST -H "Authorization: token $GITHUB_TOKEN" \
+              "https://api.github.com/repos/${{ github.repository }}/actions/runs/$run_id/cancel"
+          done
+
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0  # Fetch all history for all branches and tags

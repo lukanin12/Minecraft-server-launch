@@ -16,15 +16,15 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1723251107017
+  logout: 1723251439766
   login: 1723251110065
 money: '0'
 last-account-name: ShortyDev
 logoutlocation:
   world: 6db25809-c288-4f61-ad52-b0daa6a42e35
   world-name: world
-  x: -1118.395970548712
-  y: 60.5
-  z: -348.30000001192093
-  yaw: -16.850189208984375
-  pitch: 27.273479461669922
+  x: -1118.5490874155037
+  y: 68.0
+  z: -270.0868096129764
+  yaw: 179.87335205078125
+  pitch: 10.547520637512207

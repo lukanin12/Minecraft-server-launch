@@ -73,7 +73,7 @@ npc:
         randomYawRange:
           '0': 0.0
           '1': 360.0
-    traitnames: location,spawned,owner,rotationtrait,skintrait,commandtrait,scoreboardtrait,inventory,type,mounttrait,lookclose
+    traitnames: rotationtrait,skintrait,spawned,location,scoreboardtrait,inventory,owner,commandtrait,type,mounttrait,lookclose
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -120,7 +120,7 @@ npc:
             globalcooldown: 0
             n: -1
             delay: 0
-    traitnames: location,spawned,owner,skintrait,commandtrait,scoreboardtrait,inventory,type,mounttrait
+    traitnames: skintrait,spawned,location,scoreboardtrait,owner,inventory,commandtrait,type,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -167,7 +167,7 @@ npc:
       type: PLAYER
       spawned: true
       scoreboardtrait: {}
-    traitnames: location,owner,spawned,skintrait,commandtrait,scoreboardtrait,inventory,type,mounttrait
+    traitnames: skintrait,spawned,location,scoreboardtrait,owner,inventory,commandtrait,type,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false

@@ -76,8 +76,26 @@ jobs:
             git reset -- tunnel-config.yml
             git reset -- credentials.json
             git reset -- logs/
-            git commit -m "Auto commit every 30 seconds" || echo "No changes to commit"
-            git push https://x-access-token:${FINE_GRAINED_PAT}@github.com/${GITHUB_REPOSITORY}.git HEAD:main
+            
+            # Try to commit and push, but don't exit if it fails
+            if ! git commit -m "Auto commit every 30 seconds"; then
+                echo "No changes to commit or commit failed"
+                return 1
+            fi
+            
+            # Try pushing up to 3 times
+            for i in {1..3}; do
+                if git push https://x-access-token:${FINE_GRAINED_PAT}@github.com/${GITHUB_REPOSITORY}.git HEAD:main; then
+                    echo "Push successful on attempt $i"
+                    return 0
+                else
+                    echo "Push failed on attempt $i, retrying..."
+                    git pull --rebase
+                fi
+            done
+            
+            echo "Failed to push after 3 attempts"
+            return 1
           }
           
           delete_auto_commit_workflows() {
@@ -106,7 +124,9 @@ jobs:
           
           while true; do
             sleep 30
-            commit_and_push
+            if ! commit_and_push; then
+                echo "Commit and push failed, continuing without stopping the workflow"
+            fi
             delete_auto_commit_workflows
             
             CURRENT_TIME=$(date +%s)

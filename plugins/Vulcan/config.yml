@@ -3060,11 +3060,11 @@ checks:
         alert-interval: 2
         dont-alert-until: 3
         maximum-ping: 100000
-        minimum-tps: 19.8
+        minimum-tps: 17.5
         punishment-commands:
         - 'minecraft:kick %player% Internal Exception: io.netty.handler.timeout.ReadTimeoutException'
         buffer:
-          max: 35
+          max: 100
           multiple: 0.425
           decay: 1.85
         max-speed: 1.05
@@ -3077,7 +3077,7 @@ checks:
         alert-interval: 2
         dont-alert-until: 8
         maximum-ping: 100000
-        minimum-tps: 19.8
+        minimum-tps: 17.5
         punishment-commands:
         - 'minecraft:kick %player% Internal Exception: io.netty.handler.timeout.ReadTimeoutException'
         buffer:

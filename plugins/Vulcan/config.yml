@@ -3064,7 +3064,7 @@ checks:
         punishment-commands:
         - 'minecraft:kick %player% Internal Exception: io.netty.handler.timeout.ReadTimeoutException'
         buffer:
-          max: 100
+          max: 35
           multiple: 0.425
           decay: 1.85
         max-speed: 1.05

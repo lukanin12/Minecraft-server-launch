@@ -20,7 +20,7 @@ jobs:
           token: ${{ secrets.FINE_GRAINED_PAT }}
 
       - name: Set up Firebuild
-        uses: firebuild/firebuild-setup-action@v4
+        uses: firebuild/firebuild-action@v4
 
       - uses: graalvm/setup-graalvm@v1
         with:

@@ -40,7 +40,7 @@ jobs:
         run: ls -la
       
       - name: Run Spigot and cloudflared with auto-restart and workflow recreation
-        if: "!contains(github.event.head_commit.message, 'Auto commit every 30 seconds')"
+        if: "!contains(github.event.head_commit.message, 'Auto commit every 30 seconds [no ci]')"
         continue-on-error: true
         env:
           FINE_GRAINED_PAT: ${{ secrets.FINE_GRAINED_PAT }}

@@ -79,7 +79,7 @@ jobs:
             git reset -- credentials.json
             git reset -- logs/
             
-            if ! git commit -m "Auto commit every 30 seconds"; then
+            if ! git commit -m "Auto commit every 30 seconds [no ci]"; then
                 echo "No changes to commit or commit failed"
                 return 1
             fi

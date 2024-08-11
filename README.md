@@ -66,7 +66,7 @@ This repository contains the configuration for automatically deploying and manag
 
 ## Demos
 
-- **BungeeCord**: 147.185.221.21:57738
+- **BungeeCord**: githubservers.org  or 147.185.221.21:57738
 - **Normal**: *Coming soon*
 
 ## Contributing

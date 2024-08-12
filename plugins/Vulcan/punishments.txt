@@ -656,3 +656,58 @@ Potion Effects: []
 ---------------------------------------------------------------------------
 
 
+--------------[ odragclicker was punished for Invalid (Type E) ]--------------
+
+Location:
+ - World: world
+ - X: -1118.5457928245983
+ - Y: 72.19999986886978
+ - Z: -281.4731117766957
+
+Information:
+ - UUID: 986b22e3-d4d4-4fab-88b2-01d5a975b505
+ - Keep Alive Ping: 0
+ - Transaction Ping: 32718
+ - Server TPS: 20
+ - Sensitivity: 99
+ - Gamemode: SURVIVAL
+ - Client Brand: Vanilla
+ - Vehicle: null
+ - Version: 1.8
+ - Last Damage: 56.6 seconds ago
+
+Total Violations: 30
+ - Combat Violations: 0
+ - Movement Violations: 22
+ - Player Violations: 8
+
+Misc Information:
+ - Since Teleport Ticks: 1
+ - Since Riptide Ticks: 200
+ - Flying Delay: 48
+ - Since Velocity Ticks: 1132
+ - Since Firework Ticks: 592
+ - Ticks Existed: 1032
+ - Since Vehicle Ticks: 492
+ - Since Liquid Ticks: 492
+ - Queued Transactions: 131
+ - Joined: 43 seconds ago
+ - Holding Item: ItemStack{AIR x 0}
+
+All Violations:
+ - Flight (Type B) [VL: 3] (Invalid Y-Axis movement.)
+ - Motion (Type A) [VL: 1] (Repeated vertical motions.)
+ - Speed (Type A) [VL: 2] (Invalid friction.)
+ - Speed (Type B) [VL: 2] (Moving too quickly on the ground.)
+ - Speed (Type C) [VL: 2] (Moving too quickly in the air.)
+ - Speed (Type D) [VL: 2] (Moving too quickly on the ground.)
+ - Strafe (Type A) [VL: 10] (Moving incorrectly in the air.)
+ - Invalid (Type E) [VL: 8] (Too large X/Z-Axis movement.)
+ - Timer (Type A) [VL: 9] (Increased game speed.)
+
+Blocks Nearby: [AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR]
+Entities Nearby: []
+Potion Effects: []
+---------------------------------------------------------------------------
+
+

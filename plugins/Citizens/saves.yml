@@ -227,6 +227,11 @@ npc:
       spawned: true
       inventory: {}
       commandtrait:
+        cost: -1.0
+        executionMode: LINEAR
+        experienceCost: -1
+        hideErrorMessages: false
+        persistSequence: false
         commands:
           '0':
             command: server survival
@@ -237,11 +242,6 @@ npc:
             globalcooldown: 0
             n: -1
             delay: 0
-        cost: -1.0
-        executionMode: LINEAR
-        experienceCost: -1
-        hideErrorMessages: false
-        persistSequence: false
       location:
         bodyYaw: 359.3187
         world: world

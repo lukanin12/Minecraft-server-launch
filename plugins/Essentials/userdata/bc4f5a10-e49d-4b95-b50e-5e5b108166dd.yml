@@ -16,15 +16,15 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1723520054992
+  logout: 1723520136192
   login: 1723520088541
 money: '0'
 last-account-name: kons0las
 logoutlocation:
   world: 6db25809-c288-4f61-ad52-b0daa6a42e35
   world-name: world
-  x: -1124.292099828336
-  y: 68.0
-  z: -264.6195046470249
-  yaw: 16.134521484375
-  pitch: 14.482151985168457
+  x: -1125.2944203834504
+  y: 67.0
+  z: -247.05000001192093
+  yaw: -69.64892578125
+  pitch: 22.898706436157227

@@ -44,8 +44,8 @@ world-settings:
     disable-mood-sounds: false
     use-async-lighting: false
     disable-teleportation-suffocation-check: false
-    tnt-explosion-volume: 4.0
     optimize-explosions: false
+    tnt-explosion-volume: 4.0
     portal-search-radius: 128
     cache-chunk-maps: false
     remove-invalid-mob-spawner-tile-entities: true
@@ -70,6 +70,12 @@ world-settings:
       enderpearls: false
       tnt-entities: false
       falling-blocks: false
+    fast-drain:
+      lava: false
+      water: false
+    lava-flow-speed:
+      normal: 30
+      nether: 10
     mob-spawner-tick-rate: 1
     squid-spawn-height:
       minimum: 45.0
@@ -81,12 +87,6 @@ world-settings:
       MinimumTicks: 100
       MaximumTicks: 900
     player-blocking-damage-multiplier: 0.5
-    fast-drain:
-      lava: false
-      water: false
-    lava-flow-speed:
-      normal: 30
-      nether: 10
     disable-explosion-knockback: false
     water-over-lava-flow-speed: 5
     fix-cannons: false

@@ -153,8 +153,8 @@ announcements:
   announcements:
     main:
       - "&r"
-      - "<center>&e&lYou would want to support this server?</center>"
-      - "<center>&7Star this project on Github!</center>"
+      - "<center>&e&lWant to support this project?</center>"
+      - "<center>&7Star this project on GitHub!</center>"
       - "&r"
 
 

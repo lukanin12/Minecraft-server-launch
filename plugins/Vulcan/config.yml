@@ -97,7 +97,7 @@ connection:
   desync:
     kick-enabled: true
     max-ticks: 300
-    kick-message: 'Internal Exception: io.netty.handler.timeout.ReadTimeoutException'
+    kick-message: '&cYou are desynced from the server, please rejoin to resync yourself.'
     staff-alert-message: '%prefix% &c%player% &7was kicked for being out of sync with
       the server! &7(&c%ticks% &7ticks)'
     console-message: '[Vulcan] &c%player% &7was kicked for being out of sync with
@@ -105,7 +105,7 @@ connection:
   transaction:
     kick-enabled: true
     max-delay: 45000
-    kick-message: 'Internal Exception: io.netty.handler.timeout.ReadTimeoutException'
+    kick-message: '&cAttempt of disabling the anticheat has been detected.'
     staff-alert-message: '%prefix% &c%player% &7was kicked for not replying to Transaction
       Packets! &7(&c%delay%ms&7)'
     console-message: '[Vulcan] &c%player% &7was kicked for not replying to Transaction
@@ -113,7 +113,7 @@ connection:
   keepalive:
     kick-enabled: true
     max-delay: 45000
-    kick-message: 'Internal Exception: io.netty.handler.timeout.ReadTimeoutException'
+    kick-message: '&cYou are sending too many keepalive packets to the server.'
     staff-alert-message: '%prefix% &c%player% &7was kicked for not replying to KeepAlive
       Packets! &7(&c%delay%ms&7)'
     console-message: '[Vulcan] &c%player% &7was kicked for not replying to Keep Alive
@@ -122,7 +122,7 @@ connection:
     kick-enabled: true
     max-ping: 20000
     max-ticks: 20
-    kick-message: 'Internal Exception: io.netty.handler.timeout.ReadTimeoutException'
+    kick-message: '&cWe have removed you from the server due to high amounts of ping.'
     staff-alert-message: '%prefix% &c%player% &7was kicked for having too high ping!
       &7(&c%ping%ms&7)'
     console-message: '[Vulcan] &c%player% &7kicked for having too high ping! &7(&c%ping%ms&7)'
@@ -481,7 +481,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: -1
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 3
           multiple: 0.75
@@ -505,7 +505,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: -1
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 6
           multiple: 0.5
@@ -529,7 +529,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: -1
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 5
           multiple: 0.5
@@ -553,7 +553,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: -1
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 8
           multiple: 0.5
@@ -577,7 +577,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: -1
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 4
           multiple: 0.75
@@ -601,7 +601,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: -1
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 12
           multiple: 0.5
@@ -625,7 +625,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: -1
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 4
           multiple: 0.5
@@ -649,7 +649,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: -1
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 7
           multiple: 0.5
@@ -673,7 +673,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: -1
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 7
           multiple: 0.5
@@ -697,7 +697,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: -1
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 6
           multiple: 0.5
@@ -721,7 +721,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: -1
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 10
           multiple: 0.45
@@ -744,7 +744,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: -1
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 2
           multiple: 0.4
@@ -768,7 +768,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: -1
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 5
           multiple: 0.5
@@ -792,7 +792,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: -1
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 5
           multiple: 0.5
@@ -816,7 +816,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: -1
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 2
           multiple: 0.4
@@ -840,7 +840,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: -1
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 6
           multiple: 0.5
@@ -864,7 +864,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: -1
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 20
           multiple: 0.3
@@ -888,7 +888,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: -1
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 20
           multiple: 0.25
@@ -912,7 +912,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: -1
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         hotbar-shuffle:
           enabled: true
           minimum-vl-to-shuffle: 2
@@ -932,7 +932,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: -1
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 20
           multiple: 0.25
@@ -956,7 +956,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: -1
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 12
           multiple: 0.25
@@ -980,7 +980,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: -1
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         hotbar-shuffle:
           enabled: true
           minimum-vl-to-shuffle: 2
@@ -1001,7 +1001,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         hotbar-shuffle:
           enabled: true
           minimum-vl-to-shuffle: 2
@@ -1021,7 +1021,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         hotbar-shuffle:
           enabled: true
           minimum-vl-to-shuffle: 2
@@ -1041,7 +1041,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 2
           multiple: 0.5
@@ -1065,7 +1065,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         hotbar-shuffle:
           enabled: true
           minimum-vl-to-shuffle: 2
@@ -1086,7 +1086,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         max-cps: 25
       b:
         enabled: true
@@ -1099,7 +1099,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 3
           multiple: 0.5
@@ -1115,7 +1115,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 3
           multiple: 0.5
@@ -1131,7 +1131,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 3
           multiple: 0.5
@@ -1147,7 +1147,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 3
           multiple: 0.5
@@ -1163,7 +1163,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 4
           multiple: 0.5
@@ -1179,7 +1179,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 5
           multiple: 0.25
@@ -1195,7 +1195,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 4
           multiple: 0.5
@@ -1211,7 +1211,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 5
           multiple: 0.5
@@ -1227,7 +1227,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 4
           multiple: 0.5
@@ -1243,7 +1243,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 4
           multiple: 0.5
@@ -1259,7 +1259,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 4
           multiple: 0.25
@@ -1275,7 +1275,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 4
           multiple: 0.25
@@ -1291,7 +1291,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 25
           multiple: 0.15
@@ -1307,7 +1307,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 5
           multiple: 0.25
@@ -1323,7 +1323,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 2
           multiple: 0.25
@@ -1338,7 +1338,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 35
           multiple: 0.3
@@ -1354,7 +1354,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 50
           multiple: 0.15
@@ -1370,7 +1370,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 30
           multiple: 0.15
@@ -1386,7 +1386,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 25
           multiple: 0.15
@@ -1404,7 +1404,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 3
           multiple: 0.25
@@ -1421,7 +1421,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 6
           multiple: 0.25
@@ -1439,7 +1439,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 3
           multiple: 0.5
@@ -1464,7 +1464,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 1
           multiple: 0.5
@@ -1488,7 +1488,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 1
           multiple: 0.5
@@ -1513,7 +1513,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 3
           multiple: 0.5
@@ -1537,7 +1537,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 5
           multiple: 0.6
@@ -1561,7 +1561,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 2
           multiple: 0.5
@@ -1585,7 +1585,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
       f:
         enabled: true
         punishable: true
@@ -1597,7 +1597,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 10
           multiple: 0.25
@@ -1613,7 +1613,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
       j:
         enabled: true
         punishable: true
@@ -1625,7 +1625,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 1
           multiple: 0.5
@@ -1641,7 +1641,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 3
           multiple: 0.5
@@ -1657,7 +1657,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 5
           multiple: 0.6
@@ -1682,7 +1682,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 4
           multiple: 0.25
@@ -1699,7 +1699,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 6
           multiple: 0.25
@@ -1717,7 +1717,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 4
           multiple: 0.25
@@ -1733,7 +1733,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 4
           multiple: 0.35
@@ -1749,7 +1749,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 5
           multiple: 0.25
@@ -1765,7 +1765,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 4
           multiple: 0.25
@@ -1783,7 +1783,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 3
           multiple: 0.25
@@ -1799,7 +1799,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 7
           multiple: 0.25
@@ -1815,7 +1815,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 7
           multiple: 0.25
@@ -1831,7 +1831,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 7
           multiple: 0.25
@@ -1847,7 +1847,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 7
           multiple: 0.25
@@ -1866,7 +1866,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 3
           multiple: 0.25
@@ -1884,7 +1884,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 3
           multiple: 0.25
@@ -1902,7 +1902,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 1
           multiple: 0.5
@@ -1920,7 +1920,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 3
           multiple: 0.25
@@ -1938,7 +1938,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 1
           multiple: 0.5
@@ -1956,7 +1956,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 2
           multiple: 0.25
@@ -1974,7 +1974,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 4
           multiple: 0.25
@@ -1993,7 +1993,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 2
           multiple: 0.25
@@ -2011,7 +2011,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 2
           multiple: 0.25
@@ -2029,7 +2029,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 2
           multiple: 0.25
@@ -2047,7 +2047,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
       b:
         enabled: true
         punishable: true
@@ -2060,7 +2060,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 6
           multiple: 0.25
@@ -2077,7 +2077,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 4
           multiple: 0.25
@@ -2094,7 +2094,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 4
           multiple: 0.33
@@ -2111,7 +2111,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 5
           multiple: 0.25
@@ -2128,7 +2128,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 5
           multiple: 0.25
@@ -2146,7 +2146,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 5
           multiple: 0.5
@@ -2163,7 +2163,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 5
           multiple: 0.5
@@ -2180,7 +2180,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 8
           multiple: 0.25
@@ -2197,7 +2197,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 6
           multiple: 0.5
@@ -2214,7 +2214,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 5
           multiple: 0.5
@@ -2234,7 +2234,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 1
           multiple: 0.5
@@ -2252,7 +2252,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 8
           multiple: 0.25
@@ -2269,7 +2269,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 6
           multiple: 0.5
@@ -2286,7 +2286,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 6
           multiple: 0.25
@@ -2303,7 +2303,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 3
           multiple: 0.25
@@ -2320,7 +2320,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 4
           multiple: 0.25
@@ -2337,7 +2337,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 4
           multiple: 0.25
@@ -2354,7 +2354,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 4
           multiple: 0.25
@@ -2371,7 +2371,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 4
           multiple: 0.25
@@ -2389,7 +2389,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 3
           multiple: 0.25
@@ -2408,7 +2408,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 5
           multiple: 0.35
@@ -2426,7 +2426,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 3
           multiple: 0.25
@@ -2445,7 +2445,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 3
           multiple: 0.25
@@ -2464,7 +2464,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 3
           multiple: 0.25
@@ -2484,7 +2484,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 4
           multiple: 0.5
@@ -2503,7 +2503,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 4
           multiple: 0.35
@@ -2522,7 +2522,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 3
           multiple: 0.5
@@ -2540,7 +2540,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 4
           multiple: 0.5
@@ -2558,7 +2558,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 10
           multiple: 0.45
@@ -2576,7 +2576,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 4
           multiple: 0.45
@@ -2594,7 +2594,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 10
           multiple: 0.25
@@ -2613,7 +2613,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 3
           multiple: 0.65
@@ -2632,7 +2632,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 3
           multiple: 0.5
@@ -2650,7 +2650,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 4
           multiple: 0.75
@@ -2669,7 +2669,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 4
           multiple: 0.35
@@ -2688,7 +2688,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 3
           multiple: 0.4
@@ -2707,7 +2707,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
     sprint:
       a:
         enabled: true
@@ -2720,7 +2720,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 6
           multiple: 0.25
@@ -2739,7 +2739,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 2
           multiple: 0.5
@@ -2755,7 +2755,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 4
           multiple: 0.15
@@ -2773,7 +2773,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
     fastplace:
       a:
         enabled: true
@@ -2786,7 +2786,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         max-blocks: 15
       b:
         enabled: true
@@ -2799,7 +2799,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 1
           multiple: 0.25
@@ -2817,7 +2817,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 2
           multiple: 0.25
@@ -2835,7 +2835,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 4
           multiple: 0.5
@@ -2852,7 +2852,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
       b:
         enabled: true
         punishable: true
@@ -2864,7 +2864,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 3
           multiple: 0.25
@@ -2880,7 +2880,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 2
           multiple: 0.25
@@ -2896,7 +2896,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 4
           multiple: 0.25
@@ -2912,7 +2912,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 4
           multiple: 0.25
@@ -2928,7 +2928,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 3
           multiple: 0.5
@@ -2944,7 +2944,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 2
           multiple: 0.25
@@ -2960,7 +2960,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 8
           multiple: 0.25
@@ -2976,7 +2976,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
       j:
         enabled: true
         punishable: true
@@ -2988,7 +2988,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
       k:
         enabled: true
         punishable: true
@@ -3000,7 +3000,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 1
           multiple: 0.5
@@ -3017,7 +3017,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 1
           multiple: 0.5
@@ -3033,7 +3033,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 3
           multiple: 0.5
@@ -3049,7 +3049,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
     timer:
       a:
         enabled: true
@@ -3062,7 +3062,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - 'minecraft:kick %player% Internal Exception: io.netty.handler.timeout.ReadTimeoutException'
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 35
           multiple: 0.425
@@ -3079,7 +3079,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - 'minecraft:kick %player% Internal Exception: io.netty.handler.timeout.ReadTimeoutException'
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 3
           multiple: 0.5
@@ -3097,7 +3097,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 20
           multiple: 0.5
@@ -3113,7 +3113,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 2
           multiple: 0.5
@@ -3130,7 +3130,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         cancel: true
     airplace:
       a:
@@ -3144,7 +3144,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
     badpackets:
       a:
         enabled: true
@@ -3157,7 +3157,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 2
           multiple: 0.5
@@ -3173,7 +3173,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
       c:
         enabled: true
         punishable: true
@@ -3185,7 +3185,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
       d:
         enabled: true
         punishable: true
@@ -3197,7 +3197,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 3
           multiple: 0.25
@@ -3213,7 +3213,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
       f:
         enabled: true
         punishable: true
@@ -3225,7 +3225,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
       g:
         enabled: true
         punishable: true
@@ -3237,7 +3237,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
       h:
         enabled: true
         punishable: true
@@ -3249,7 +3249,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
       i:
         enabled: true
         punishable: true
@@ -3261,7 +3261,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
       j:
         enabled: true
         punishable: true
@@ -3273,7 +3273,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
       k:
         enabled: true
         punishable: true
@@ -3285,7 +3285,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 3
           multiple: 0.5
@@ -3301,7 +3301,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 5
           multiple: 0.33
@@ -3317,7 +3317,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 20
           multiple: 0.25
@@ -3333,7 +3333,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 3
           multiple: 0.5
@@ -3349,7 +3349,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 3
           multiple: 0.5
@@ -3365,7 +3365,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 3
           multiple: 0.5
@@ -3381,7 +3381,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 6
           multiple: 0.5
@@ -3397,7 +3397,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
       t:
         enabled: true
         punishable: true
@@ -3409,7 +3409,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
       u:
         enabled: true
         punishable: true
@@ -3421,7 +3421,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
       v:
         enabled: true
         punishable: true
@@ -3433,7 +3433,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 8
           multiple: 0.5
@@ -3450,7 +3450,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 8
           multiple: 0.5
@@ -3466,7 +3466,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 6
           multiple: 0.5
@@ -3482,7 +3482,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
       z:
         enabled: true
         punishable: true
@@ -3494,7 +3494,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
       '1':
         enabled: true
         punishable: true
@@ -3506,7 +3506,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 12
           multiple: 0.25
@@ -3522,7 +3522,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 12
           multiple: 0.25
@@ -3538,7 +3538,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 4
           multiple: 0.25
@@ -3554,7 +3554,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
       '6':
         enabled: true
         punishable: true
@@ -3566,7 +3566,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 3
           multiple: 0.25
@@ -3582,7 +3582,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 15
           multiple: 0.25
@@ -3599,7 +3599,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 2
           multiple: 0.25
@@ -3615,7 +3615,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 2
           multiple: 0.25
@@ -3634,7 +3634,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 2
           multiple: 0.25
@@ -3652,7 +3652,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 3
           multiple: 0.25
@@ -3668,7 +3668,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 8
           multiple: 0.25
@@ -3686,7 +3686,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 1
           multiple: 0.5
@@ -3704,7 +3704,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 1
           multiple: 0.5
@@ -3722,7 +3722,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 2
           multiple: 0.5
@@ -3740,7 +3740,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 3
           multiple: 0.5
@@ -3758,7 +3758,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 3
           multiple: 0.5
@@ -3776,7 +3776,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 1
           multiple: 0.5
@@ -3793,7 +3793,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 4
           multiple: 0.5
@@ -3809,7 +3809,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 4
           multiple: 0.5
@@ -3825,7 +3825,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         buffer:
           max: 4
           multiple: 0.5
@@ -3842,7 +3842,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         max-combat-violations: 25
       b:
         enabled: true
@@ -3855,7 +3855,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         max-movement-violations: 30
       c:
         enabled: true
@@ -3868,7 +3868,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         max-player-violations: 30
       d:
         enabled: true
@@ -3881,7 +3881,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         max-autoclicker-violations: 30
       e:
         enabled: true
@@ -3894,7 +3894,7 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         max-total-violations: 50
       f:
         enabled: true
@@ -3907,5 +3907,5 @@ checks:
         maximum-ping: 100000
         minimum-tps: 17.5
         punishment-commands:
-        - kick %player% &c[AC] Skill Issue Detected
+        - kick %player% &cUnfair Advantages
         max-scaffold-violations: 25

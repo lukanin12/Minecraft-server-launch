@@ -55,6 +55,12 @@ world-settings:
     lava-flow-speed:
       normal: 30
       nether: 10
+    nether-ceiling-void-damage: false
+    load-chunks:
+      enderpearls: false
+      tnt-entities: false
+      falling-blocks: false
+    player-blocking-damage-multiplier: 0.5
     mob-spawner-tick-rate: 1
     squid-spawn-height:
       minimum: 45.0
@@ -72,7 +78,6 @@ world-settings:
       soft: 32
       hard: 128
     falling-block-height-nerf: 0
-    nether-ceiling-void-damage: false
     remove-unloaded:
       enderpearls: true
       tnt-entities: true
@@ -82,11 +87,6 @@ world-settings:
       disable-player-crits: false
       disable-chest-cat-detection: false
       disable-end-credits: false
-    load-chunks:
-      enderpearls: false
-      tnt-entities: false
-      falling-blocks: false
-    player-blocking-damage-multiplier: 0.5
     disable-explosion-knockback: false
     water-over-lava-flow-speed: 5
     fix-cannons: false

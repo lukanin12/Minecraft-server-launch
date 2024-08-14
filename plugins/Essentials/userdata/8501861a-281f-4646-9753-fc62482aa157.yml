@@ -16,15 +16,15 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1723653444216
+  logout: 1723653508714
   login: 1723653444563
 money: '0'
 last-account-name: libdeflate
 logoutlocation:
   world: 6db25809-c288-4f61-ad52-b0daa6a42e35
   world-name: world
-  x: -1116.5531739233327
-  y: 68.4807108763317
-  z: -282.40370980074766
-  yaw: 273.3575744628906
-  pitch: 17.431171417236328
+  x: -1143.9614070419764
+  y: 57.0
+  z: -285.35639538047906
+  yaw: -136.36676025390625
+  pitch: 69.68234252929688

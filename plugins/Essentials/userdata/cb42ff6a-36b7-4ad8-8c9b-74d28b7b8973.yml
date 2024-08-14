@@ -4,7 +4,7 @@ godmode: false
 muted: false
 jailed: false
 ip-address: 127.30.38.147
-afk: true
+afk: false
 socialspy: false
 npc: false
 powertoolsenabled: true
@@ -16,18 +16,18 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1723613141226
-  login: 1723614522121
+  logout: 1723616265367
+  login: 1723616263566
 money: '0'
 last-account-name: Briiqn
 logoutlocation:
   world: 6db25809-c288-4f61-ad52-b0daa6a42e35
   world-name: world
-  x: -1120.5986795676608
-  y: 68.0
-  z: -282.0159423875176
-  yaw: 148.46902465820312
-  pitch: 5.528316020965576
+  x: -1118.4253613718104
+  y: 67.5
+  z: -277.76135880068784
+  yaw: 179.5454559326172
+  pitch: 9.170085906982422
 lastlocation:
   world: 307aafcb-4793-4c39-8f3b-2cb5f151c8c7
   world-name: world_the_end

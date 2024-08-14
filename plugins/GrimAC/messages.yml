@@ -5,7 +5,7 @@ prefix: "&bGrim &8\u00BB"
 
 alerts-enabled: "%prefix% &fAlerts enabled"
 alerts-disabled: "%prefix% &fAlerts disabled"
-client-brand-format: "%prefix% &f%player% joined using %brand%"
+client-brand-format: "&7[&c⚠&7] &f%player% &7joined using &7[&b%brand%&7]"
 console-specify-target: "%prefix% &cYou must specify a target as the console!"
 player-not-found: "%prefix% &cPlayer is exempt or offline!"
 player-not-this-server: "%prefix% &cPlayer is not on this server!"
@@ -27,7 +27,7 @@ upload-log-upload-failure: "%prefix% &cSomething went wrong while uploading this
 # %verbose% - extra information from the check such as offsets, not all checks will add information
 alerts-format: "%prefix% &f%player% &bfailed &f%check_name%%experimental% &f(x&c%vl%&f) &7%verbose%"
 alerts-format-proxy: "%prefix% &f[&cproxy&f] &f%player% &bfailed &f%check_name%%experimental% &f(x&c%vl%&f) &7%verbose%"
-experimental-symbol: "*"
+experimental-symbol: " &b(Experimental)"
 
 profile:
   - "&7======================"

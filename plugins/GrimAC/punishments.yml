@@ -32,6 +32,7 @@ Punishments:
       - "100:100 [webhook]"
       - "100:100 [proxy]"
       - "200:0 kick %player% &bUnfair Advantages"
+      - "200:0 grim sendalert &7(Slient) &b%player% &7has been punished for &bcheating (%check%)"
   Knockback:
     remove-violations-after: 300
     checks:
@@ -42,6 +43,7 @@ Punishments:
       - "20:20 [webhook]"
       - "20:20 [proxy]"
       - "40:0 kick %player% &bUnfair Advantages"
+      - "40:0 grim sendalert &7(Slient) &b%player% &7has been punished for &bcheating (%check%)"
   Post:
     remove-violations-after: 300
     checks:
@@ -51,6 +53,7 @@ Punishments:
       - "40:40 [webhook]"
       - "40:40 [proxy]"
       - "80:0 kick %player% &bUnfair Advantages"
+      - "80:0 grim sendalert &7(Slient) &b%player% &7has been punished for &bcheating (%check%)"
 
   BadPackets:
     remove-violations-after: 300
@@ -62,6 +65,7 @@ Punishments:
       - "40:40 [webhook]"
       - "40:40 [proxy]"
       - "80:0 kick %player% &bUnfair Advantages"
+      - "80:0 grim sendalert &7(Slient) &b%player% &7has been punished for &bcheating (%check%)"
   Reach:
     remove-violations-after: 300
     checks:
@@ -71,6 +75,7 @@ Punishments:
       - "5:5 [webhook]"
       - "5:5 [proxy]"
       - "10:0 kick %player% &bUnfair Advantages"
+      - "10:0 grim sendalert &7(Slient) &b%player% &7has been punished for &bcheating (%check%)"
   Misc:
     remove-violations-after: 300
     checks:
@@ -85,6 +90,7 @@ Punishments:
       - "20:10 [webhook]"
       - "20:10 [proxy]"
       - "40:0 kick %player% &bUnfair Advantages"
+      - "40:0 grim sendalert &7(Slient) &b%player% &7has been punished for &bcheating (%check%)"
   Combat:
     remove-violations-after: 300
     checks:
@@ -93,6 +99,7 @@ Punishments:
     commands:
       - "20:40 [alert]"
       - "40:0 kick %player% &bUnfair Advantages"
+      - "40:0 grim sendalert &7(Slient) &b%player% &7has been punished for &bcheating (%check%)"
   # As of 2.2.10, there are no AutoClicker checks and this is a placeholder. Grim will include AutoClicker checks in the future.
   Autoclicker:
     remove-violations-after: 300
@@ -101,3 +108,4 @@ Punishments:
     commands:
       - "20:40 [alert]"
       - "40:0 kick %player% &bUnfair Advantages"
+      - "40:0 grim sendalert &7(Slient) &b%player% &7has been punished for &bcheating (%check%)"

@@ -154,7 +154,7 @@ announcements:
     main:
       - "&r"
       - "<center>&e&lYou would want to support this server?</center>"
-      - "<center>&7Rate this project on Github!</center>"
+      - "<center>&7Star this project on Github!</center>"
       - "&r"
 
 

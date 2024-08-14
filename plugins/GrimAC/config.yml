@@ -21,10 +21,6 @@ verbose:
 client-brand:
   # This means it won't broadcast their brand to operators if the brand matches the following regexes
   ignored-clients:
-    - "^vanilla$"
-    - "^fabric$"
-    - "^lunarclient:v\\d+\\.\\d+\\.\\d+-\\d{4}$"
-    - "^Feather Fabric$"
 
 spectators:
   # Hide all spectators with the grim.spectator permission regardless if they are actually actively spectating
@@ -171,7 +167,7 @@ exploit:
 debug-pipeline-on-join: false
 
 # Enables experimental checks
-experimental-checks: false
+experimental-checks: true
 
 # Grim sometimes cancels illegal packets such as with timer, after X packets in a second cancelled, when should
 # we simply kick the player? This is required as some packet limiters don't count packets cancelled by grim.

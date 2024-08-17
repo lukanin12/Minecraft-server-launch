@@ -16,15 +16,15 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1723929063600
-  login: 1723929058598
+  logout: 1723929126599
+  login: 1723929123548
 money: '0'
 last-account-name: Amplitudes
 logoutlocation:
   world: 6db25809-c288-4f61-ad52-b0daa6a42e35
   world-name: world
-  x: -1120.2053963016003
+  x: -1117.969458270802
   y: 68.0
-  z: -282.2752113734592
-  yaw: 170.6632537841797
-  pitch: 13.127744674682617
+  z: -280.0941083640296
+  yaw: 192.1627655029297
+  pitch: 14.730554580688477

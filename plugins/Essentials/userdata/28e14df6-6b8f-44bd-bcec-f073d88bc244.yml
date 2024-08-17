@@ -16,15 +16,15 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1723928378749
+  logout: 1723929122600
   login: 1723929120948
 money: '0'
 last-account-name: olionelchilling
 logoutlocation:
   world: 6db25809-c288-4f61-ad52-b0daa6a42e35
   world-name: world
-  x: -1119.1750024178164
+  x: -1118.1691937350308
   y: 68.0
-  z: -281.30762628887766
-  yaw: 82.73515319824219
-  pitch: 12.612342834472656
+  z: -276.1873771097295
+  yaw: 185.74302673339844
+  pitch: 8.438627243041992

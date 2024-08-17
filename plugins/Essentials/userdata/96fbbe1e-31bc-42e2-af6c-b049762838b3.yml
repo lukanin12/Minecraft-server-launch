@@ -16,15 +16,15 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1723928995350
+  logout: 1723929025400
   login: 1723929022998
 money: '0'
 last-account-name: klir
 logoutlocation:
   world: 6db25809-c288-4f61-ad52-b0daa6a42e35
   world-name: world
-  x: -1118.4437294810903
+  x: -1118.5471091097004
   y: 68.0
-  z: -280.33713621479166
-  yaw: 179.98544311523438
-  pitch: 16.950990676879883
+  z: -279.7423019053938
+  yaw: 178.89808654785156
+  pitch: 11.193286895751953

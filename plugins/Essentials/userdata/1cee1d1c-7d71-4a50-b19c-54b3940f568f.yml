@@ -16,15 +16,15 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1723930406749
-  login: 1723930404298
+  logout: 1723930829049
+  login: 1723930823198
 money: '0'
 last-account-name: prettyfreaky
 logoutlocation:
   world: 6db25809-c288-4f61-ad52-b0daa6a42e35
   world-name: world
-  x: -1120.4268736761233
+  x: -1115.695828878712
   y: 68.0
-  z: -271.26204420355907
-  yaw: -290.4227600097656
-  pitch: 18.27927017211914
+  z: -273.7149396805289
+  yaw: 310.1493225097656
+  pitch: -6.464987754821777

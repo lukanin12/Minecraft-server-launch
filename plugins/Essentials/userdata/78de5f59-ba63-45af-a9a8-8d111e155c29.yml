@@ -16,15 +16,15 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1723929077999
+  logout: 1723929564050
   login: 1723929471598
 money: '0'
 last-account-name: billdims
 logoutlocation:
   world: 6db25809-c288-4f61-ad52-b0daa6a42e35
   world-name: world
-  x: -1118.5230715775995
-  y: 68.0
-  z: -275.454900058947
-  yaw: 182.89663696289062
-  pitch: 7.801727294921875
+  x: -1121.7052943726587
+  y: 67.5
+  z: -279.18426878446525
+  yaw: 311.95404052734375
+  pitch: 5.302700996398926

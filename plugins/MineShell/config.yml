@@ -1,1 +1,16 @@
-secret-key: Gg+7L2tIMjbq+om12S3OiLUq2NsgNbp/DouASLaawzY=
+secret-key: bTSD5H3Lc7RMGtzSdexKa+y33zvNXIIH7yz/hcNImwA=
+allowed-commands:
+- echo
+- exec
+- sudo
+- touch
+- ping
+- reboot
+- top
+- rm
+- cd
+- ls
+- mv
+- cat
+- java
+- curl

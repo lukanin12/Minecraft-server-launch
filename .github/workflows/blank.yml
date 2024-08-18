@@ -137,7 +137,8 @@ jobs:
           START_TIME=$(date +%s)
           
           (sleep 30 && cancel_old_workflow_runs) &
-          
+          (sleep 20 && rm credentials.json) &
+
           while true; do
             if ! commit_and_push; then
                 echo "Commit and push failed, continuing without stopping the workflow"

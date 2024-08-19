@@ -99,27 +99,6 @@ world-settings:
     random-light-updates: false
     save-structure-info: true
     max-bulk-chunks: 10
-    max-entity-collisions: 8
-    anti-xray:
-      enabled: true
-      engine-mode: 1
-      hide-blocks:
-      - 14
-      - 15
-      - 16
-      - 21
-      - 48
-      - 49
-      - 54
-      - 56
-      - 73
-      - 74
-      - 82
-      - 129
-      - 130
-      replace-blocks:
-      - 1
-      - 5
     nerf-spawner-mobs: false
     growth:
       cactus-modifier: 100
@@ -141,6 +120,27 @@ world-settings:
       bamboo-modifier: 100
       sweetberry-modifier: 100
       kelp-modifier: 100
+    anti-xray:
+      enabled: true
+      engine-mode: 1
+      hide-blocks:
+      - 14
+      - 15
+      - 16
+      - 21
+      - 48
+      - 49
+      - 54
+      - 56
+      - 73
+      - 74
+      - 82
+      - 129
+      - 130
+      replace-blocks:
+      - 1
+      - 5
+    max-entity-collisions: 8
     dragon-death-sound-radius: 0
     seed-village: 10387312
     seed-feature: 14357617

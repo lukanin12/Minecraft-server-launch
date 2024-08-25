@@ -16,7 +16,15 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 0
-  login: 1724569598336
+  logout: 1724569647693
+  login: 1724569666089
 money: '0'
 last-account-name: shotcun
+logoutlocation:
+  world: 6db25809-c288-4f61-ad52-b0daa6a42e35
+  world-name: world
+  x: -1119.2153211656312
+  y: 68.0
+  z: -281.8719611024597
+  yaw: 204.84796142578125
+  pitch: 27.843273162841797

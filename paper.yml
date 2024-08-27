@@ -55,6 +55,11 @@ world-settings:
     lava-flow-speed:
       normal: 30
       nether: 10
+    nether-ceiling-void-damage: false
+    load-chunks:
+      enderpearls: false
+      tnt-entities: false
+      falling-blocks: false
     player-blocking-damage-multiplier: 0.5
     mob-spawner-tick-rate: 1
     squid-spawn-height:
@@ -72,11 +77,6 @@ world-settings:
     despawn-ranges:
       soft: 32
       hard: 128
-    nether-ceiling-void-damage: false
-    load-chunks:
-      enderpearls: false
-      tnt-entities: false
-      falling-blocks: false
     falling-block-height-nerf: 0
     remove-unloaded:
       enderpearls: true
@@ -88,8 +88,8 @@ world-settings:
       disable-chest-cat-detection: false
       disable-end-credits: false
     disable-explosion-knockback: false
-    fix-cannons: false
     water-over-lava-flow-speed: 5
+    fix-cannons: false
     tnt-entity-height-nerf: 0
     use-hopper-check: false
     all-chunks-are-slime-chunks: false

@@ -711,3 +711,48 @@ Potion Effects: []
 ---------------------------------------------------------------------------
 
 
+--------------[ odragclicker was punished for Bad Packets (Type J) ]--------------
+
+Location:
+ - World: world
+ - X: 0.0
+ - Y: 0.0
+ - Z: 0.0
+
+Information:
+ - UUID: 986b22e3-d4d4-4fab-88b2-01d5a975b505
+ - Keep Alive Ping: 0
+ - Transaction Ping: 0
+ - Server TPS: 20
+ - Sensitivity: 0
+ - Gamemode: SURVIVAL
+ - Client Brand: Unresolved
+ - Vehicle: null
+ - Version: 1.8
+ - Last Damage: 5.0 seconds ago
+
+Total Violations: 3
+ - Combat Violations: 0
+ - Movement Violations: 0
+ - Player Violations: 3
+
+Misc Information:
+ - Since Teleport Ticks: 100
+ - Since Riptide Ticks: 200
+ - Flying Delay: 0
+ - Since Velocity Ticks: 100
+ - Since Firework Ticks: 200
+ - Ticks Existed: 0
+ - Since Vehicle Ticks: 100
+ - Since Liquid Ticks: 100
+ - Queued Transactions: 1
+ - Joined: 0 seconds ago
+ - Holding Item: ItemStack{AIR x 0}
+
+All Violations:
+ - Bad Packets (Type J) [VL: 3] (Sent HeldItemSlot while placing.)
+
+Potion Effects: []
+---------------------------------------------------------------------------
+
+

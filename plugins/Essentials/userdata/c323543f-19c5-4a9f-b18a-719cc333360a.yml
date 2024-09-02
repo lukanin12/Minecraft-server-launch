@@ -16,7 +16,15 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 0
+  logout: 1725238786033
   login: 1725238724210
 money: '0'
 last-account-name: giannhsk14
+logoutlocation:
+  world: 6db25809-c288-4f61-ad52-b0daa6a42e35
+  world-name: world
+  x: -1115.7035810930852
+  y: 68.0
+  z: -273.8258183306899
+  yaw: 17.690155029296875
+  pitch: 16.199970245361328

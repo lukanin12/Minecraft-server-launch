@@ -63,7 +63,7 @@ This repository contains the configuration for automatically deploying and manag
 
 - Public repositories get 16 GB of memory for GitHub Actions, while private repositories only get 8 GB.
 - The setup supports both public and private repositories. For private repositories, additional configuration might be required to handle server data.
-
+- This project does **NOT** necessarily need cloudflare or a domain to host a server on github, view [playit-only](https://github.com/Briiqn/Actions-Server/tree/playit-only) for more details, forks may have to make small modifications to make it work.
 ## Demos
 
 - **BungeeCord**: githubservers.org  or 147.185.221.21:57738

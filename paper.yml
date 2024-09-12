@@ -49,10 +49,6 @@ world-settings:
     portal-search-radius: 128
     cache-chunk-maps: false
     remove-invalid-mob-spawner-tile-entities: true
-    load-chunks:
-      enderpearls: false
-      tnt-entities: false
-      falling-blocks: false
     despawn-ranges:
       soft: 32
       hard: 128
@@ -81,6 +77,10 @@ world-settings:
     player-exhaustion:
       block-break: 0.02500000037252903
       swimming: 0.014999999664723873
+    load-chunks:
+      enderpearls: false
+      tnt-entities: false
+      falling-blocks: false
     fast-drain:
       lava: false
       water: false

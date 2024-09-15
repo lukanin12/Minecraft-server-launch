@@ -73,7 +73,7 @@ npc:
         randomYawRange:
           '0': 0.0
           '1': 360.0
-    traitnames: type,inventory,skintrait,location,lookclose,owner,scoreboardtrait,rotationtrait,mounttrait,spawned,commandtrait
+    traitnames: owner,commandtrait,type,inventory,location,lookclose,rotationtrait,skintrait,scoreboardtrait,mounttrait,spawned
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -141,7 +141,7 @@ npc:
         enabled: true
       rotationtrait:
         globalParameters: {}
-    traitnames: type,inventory,gravity,skintrait,location,scoreboardtrait,owner,lookclose,rotationtrait,mounttrait,spawned,commandtrait
+    traitnames: owner,commandtrait,type,gravity,inventory,location,rotationtrait,lookclose,skintrait,scoreboardtrait,mounttrait,spawned
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -212,7 +212,7 @@ npc:
         lineHeight: -1.0
       gravity:
         enabled: true
-    traitnames: hologramtrait,location,scoreboardtrait,rotationtrait,type,inventory,gravity,skintrait,owner,lookclose,mounttrait,spawned,commandtrait
+    traitnames: location,lookclose,rotationtrait,skintrait,scoreboardtrait,hologramtrait,spawned,owner,commandtrait,type,gravity,inventory,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -256,7 +256,7 @@ npc:
         updateSkins: false
         signature: XM/TuQim4TnlEONCxqes38WCb2sudZ/JDD200kg8lEklfAJzt3rrjhEWz70nybjiBnJfP+ac3AAcdyZjAT29d3e8Pz4mRWt40s6TKoi5q1MBfc8K8ccDQTopC9fZ+u+aPiLkxSJ6CLgmyjs8iZe55hgXEJqcdgh2LcEAFxzf+M5QpjMuLlFFDDh7/W0KhwZNPXhexBbTPw72rqrQnb1vryEYj87wMv/+S3gs9FSqn4LYgaoC0kPM6oTrw7WdUZP4mjymjjgaC0mzZvV7EoEPDCFVn0QfEb5b6jmufAl2486X/WeTBKeFY7e4c4qMoO3KkRK8/uSfEF3AumigsAgJp++UlkLxZqrFiwmjCO3WZNde0LuKAFzs8FmlyqrQZ5QYMI90BmYaudwibJpYB7Gg/LtaU6cF8gnzzhYbKh5+tNhCgH1iXJI0p93RpHR1z35JCwFcaalSQ9srBJ/nm66YGbV+aJZXcueTqu7VQbeuZGxjcCHGbpKRVX+cs4Llwhr3XtPaNejP6SDcgBTqvHo2NzHW/ooQcc/jVvA9HUzJmF6gOhgvYfmX6T7ue/MzTbJPk2md41Q1fdc4USbWOaRl8yTidJCNHWboVG5KO4AN4TN3wdCqtBGlTv42eqwVtsgZA8ehMYzERf0k3TGhgbmkkKKCOIghj1q5VtNqwkACQ+Y=
         textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTcyMzQzOTU0MjAwNiwKICAicHJvZmlsZUlkIiA6ICJhODY1MjI5ZTUwM2E0YzJkOTE4ZjM1ODU3ZDA3MWQ1MiIsCiAgInByb2ZpbGVOYW1lIiA6ICJTdXJ2aXZhbCIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9kYjQwNmJjMWNiYzVmODVjMzQzMjliZjBhMjM2MjUyMzVjNTI5ZWNiMGRmYzVlYWE5NTM5ZDQ0M2UwMGNjMDciCiAgICB9CiAgfQp9
-    traitnames: type,inventory,skintrait,location,scoreboardtrait,owner,mounttrait,spawned,commandtrait
+    traitnames: commandtrait,owner,type,inventory,location,skintrait,scoreboardtrait,mounttrait,spawned
     navigator:
       speedmodifier: '1.0'
       avoidwater: false

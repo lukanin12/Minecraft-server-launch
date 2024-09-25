@@ -49,9 +49,6 @@ world-settings:
     portal-search-radius: 128
     cache-chunk-maps: false
     remove-invalid-mob-spawner-tile-entities: true
-    fishing-time-range:
-      MinimumTicks: 100
-      MaximumTicks: 900
     player-exhaustion:
       block-break: 0.02500000037252903
       swimming: 0.014999999664723873
@@ -87,9 +84,12 @@ world-settings:
     max-growth-height:
       cactus: 3
       reeds: 3
+    fishing-time-range:
+      MinimumTicks: 100
+      MaximumTicks: 900
     disable-explosion-knockback: false
-    water-over-lava-flow-speed: 5
     fix-cannons: false
+    water-over-lava-flow-speed: 5
     tnt-entity-height-nerf: 0
     use-hopper-check: false
     all-chunks-are-slime-chunks: false

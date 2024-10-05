@@ -49,6 +49,9 @@ world-settings:
     portal-search-radius: 128
     cache-chunk-maps: false
     remove-invalid-mob-spawner-tile-entities: true
+    max-growth-height:
+      cactus: 3
+      reeds: 3
     fishing-time-range:
       MinimumTicks: 100
       MaximumTicks: 900
@@ -84,9 +87,6 @@ world-settings:
     squid-spawn-height:
       minimum: 45.0
       maximum: 63.0
-    max-growth-height:
-      cactus: 3
-      reeds: 3
     disable-explosion-knockback: false
     water-over-lava-flow-speed: 5
     fix-cannons: false

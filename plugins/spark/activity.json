@@ -323,18 +323,5 @@
       "type": "url",
       "value": "https://spark.lucko.me/sI5eOlQwvP"
     }
-  },
-  {
-    "user": {
-      "type": "player",
-      "name": "Sigma5",
-      "uniqueId": "24e156e9-3338-357e-a647-e93650746e1d"
-    },
-    "time": 1723002546299,
-    "type": "Profiler",
-    "data": {
-      "type": "url",
-      "value": "https://spark.lucko.me/ykfiYJjN6p"
-    }
   }
 ]

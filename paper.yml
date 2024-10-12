@@ -63,10 +63,6 @@ world-settings:
     max-growth-height:
       cactus: 3
       reeds: 3
-    remove-unloaded:
-      enderpearls: true
-      tnt-entities: true
-      falling-blocks: true
     game-mechanics:
       boats-drop-boats: false
       disable-player-crits: false
@@ -87,8 +83,12 @@ world-settings:
       soft: 32
       hard: 128
     falling-block-height-nerf: 0
-    fix-cannons: false
+    remove-unloaded:
+      enderpearls: true
+      tnt-entities: true
+      falling-blocks: true
     disable-explosion-knockback: false
+    fix-cannons: false
     water-over-lava-flow-speed: 5
     tnt-entity-height-nerf: 0
     use-hopper-check: false

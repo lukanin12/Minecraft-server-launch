@@ -49,9 +49,11 @@ world-settings:
     portal-search-radius: 128
     cache-chunk-maps: false
     remove-invalid-mob-spawner-tile-entities: true
-    despawn-ranges:
-      soft: 32
-      hard: 128
+    load-chunks:
+      enderpearls: false
+      tnt-entities: false
+      falling-blocks: false
+    player-blocking-damage-multiplier: 0.5
     falling-block-height-nerf: 0
     remove-unloaded:
       enderpearls: true
@@ -63,7 +65,6 @@ world-settings:
       disable-chest-cat-detection: false
       disable-end-credits: false
     nether-ceiling-void-damage: false
-    player-blocking-damage-multiplier: 0.5
     mob-spawner-tick-rate: 1
     squid-spawn-height:
       minimum: 45.0
@@ -77,10 +78,9 @@ world-settings:
     player-exhaustion:
       block-break: 0.02500000037252903
       swimming: 0.014999999664723873
-    load-chunks:
-      enderpearls: false
-      tnt-entities: false
-      falling-blocks: false
+    despawn-ranges:
+      soft: 32
+      hard: 128
     fast-drain:
       lava: false
       water: false

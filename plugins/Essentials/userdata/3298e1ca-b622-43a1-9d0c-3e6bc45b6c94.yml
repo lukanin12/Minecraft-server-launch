@@ -16,7 +16,15 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 0
-  login: 1728975002781
+  logout: 1728975032953
+  login: 1728975025652
 money: '0'
 last-account-name: danifest
+logoutlocation:
+  world: 6db25809-c288-4f61-ad52-b0daa6a42e35
+  world-name: world
+  x: -1118.5014582906167
+  y: 68.0
+  z: -272.3011725092074
+  yaw: 146.38328552246094
+  pitch: 4.754726409912109

@@ -16,18 +16,18 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1729478000986
-  login: 1729477994634
+  logout: 1729480778487
+  login: 1729480773584
 money: '0'
 last-account-name: Briiqn
 logoutlocation:
   world: 6db25809-c288-4f61-ad52-b0daa6a42e35
   world-name: world
-  x: -1119.2673592129763
-  y: 68.1222039402537
-  z: -278.5405739797081
-  yaw: 172.70245361328125
-  pitch: 11.515976905822754
+  x: -1120.0521808526844
+  y: 68.5
+  z: -283.0643353591819
+  yaw: 171.79898071289062
+  pitch: 11.5805082321167
 lastlocation:
   world: 307aafcb-4793-4c39-8f3b-2cb5f151c8c7
   world-name: world_the_end

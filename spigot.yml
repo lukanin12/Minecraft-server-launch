@@ -79,47 +79,6 @@ world-settings:
       exp: 3.0
       item: 2.5
     mob-spawn-range: 4
-    anti-xray:
-      enabled: true
-      engine-mode: 1
-      hide-blocks:
-      - 14
-      - 15
-      - 16
-      - 21
-      - 48
-      - 49
-      - 54
-      - 56
-      - 73
-      - 74
-      - 82
-      - 129
-      - 130
-      replace-blocks:
-      - 1
-      - 5
-    nerf-spawner-mobs: false
-    growth:
-      cactus-modifier: 100
-      cane-modifier: 100
-      melon-modifier: 100
-      mushroom-modifier: 100
-      pumpkin-modifier: 100
-      sapling-modifier: 100
-      wheat-modifier: 100
-      netherwart-modifier: 100
-      twistingvines-modifier: 100
-      weepingvines-modifier: 100
-      cavevines-modifier: 100
-      beetroot-modifier: 100
-      carrot-modifier: 100
-      potato-modifier: 100
-      vine-modifier: 100
-      cocoa-modifier: 100
-      bamboo-modifier: 100
-      sweetberry-modifier: 100
-      kelp-modifier: 100
     entity-activation-range:
       animals: 32
       monsters: 32
@@ -141,6 +100,47 @@ world-settings:
     save-structure-info: true
     max-bulk-chunks: 10
     max-entity-collisions: 8
+    nerf-spawner-mobs: false
+    growth:
+      cactus-modifier: 100
+      cane-modifier: 100
+      melon-modifier: 100
+      mushroom-modifier: 100
+      pumpkin-modifier: 100
+      sapling-modifier: 100
+      wheat-modifier: 100
+      netherwart-modifier: 100
+      twistingvines-modifier: 100
+      weepingvines-modifier: 100
+      cavevines-modifier: 100
+      beetroot-modifier: 100
+      carrot-modifier: 100
+      potato-modifier: 100
+      vine-modifier: 100
+      cocoa-modifier: 100
+      bamboo-modifier: 100
+      sweetberry-modifier: 100
+      kelp-modifier: 100
+    anti-xray:
+      enabled: true
+      engine-mode: 1
+      hide-blocks:
+      - 14
+      - 15
+      - 16
+      - 21
+      - 48
+      - 49
+      - 54
+      - 56
+      - 73
+      - 74
+      - 82
+      - 129
+      - 130
+      replace-blocks:
+      - 1
+      - 5
     dragon-death-sound-radius: 0
     seed-village: 10387312
     seed-feature: 14357617

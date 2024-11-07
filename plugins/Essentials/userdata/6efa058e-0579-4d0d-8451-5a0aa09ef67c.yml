@@ -16,15 +16,15 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1731011755802
-  login: 1731011751102
+  logout: 1731012225199
+  login: 1731012222647
 money: '0'
 last-account-name: PaperTrain2829
 logoutlocation:
   world: 6db25809-c288-4f61-ad52-b0daa6a42e35
   world-name: world
-  x: -1118.545526187905
+  x: -1118.5226210679118
   y: 67.5
-  z: -278.6412535221973
-  yaw: 180.09805297851562
-  pitch: 5.643285751342773
+  z: -278.00708928921995
+  yaw: 183.09808349609375
+  pitch: 6.54328727722168

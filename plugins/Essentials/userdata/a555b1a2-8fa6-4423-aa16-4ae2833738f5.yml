@@ -16,15 +16,15 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1723928365000
-  login: 1732473045616
+  logout: 1732473076964
+  login: 1732473073263
 money: '0'
 last-account-name: Dirto
 logoutlocation:
   world: 6db25809-c288-4f61-ad52-b0daa6a42e35
   world-name: world
-  x: -1118.5045115781265
+  x: -1121.405234307059
   y: 68.0
-  z: -272.5742759642088
-  yaw: 178.63189697265625
-  pitch: 11.548194885253906
+  z: -282.69999998807907
+  yaw: 164.96792602539062
+  pitch: 0.7235087156295776

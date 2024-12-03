@@ -69,14 +69,13 @@ world-settings:
     player-exhaustion:
       block-break: 0.02500000037252903
       swimming: 0.014999999664723873
-    nether-ceiling-void-damage: false
+    despawn-ranges:
+      soft: 32
+      hard: 128
     load-chunks:
       enderpearls: false
       tnt-entities: false
       falling-blocks: false
-    despawn-ranges:
-      soft: 32
-      hard: 128
     falling-block-height-nerf: 0
     remove-unloaded:
       enderpearls: true
@@ -87,6 +86,7 @@ world-settings:
       disable-player-crits: false
       disable-chest-cat-detection: false
       disable-end-credits: false
+    nether-ceiling-void-damage: false
     disable-explosion-knockback: false
     water-over-lava-flow-speed: 5
     fix-cannons: false

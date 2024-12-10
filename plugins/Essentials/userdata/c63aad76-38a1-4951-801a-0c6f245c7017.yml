@@ -16,7 +16,15 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 0
+  logout: 1733849185762
   login: 1733849051327
 money: '0'
 last-account-name: Misguide
+logoutlocation:
+  world: 6db25809-c288-4f61-ad52-b0daa6a42e35
+  world-name: world
+  x: -1119.6216662859138
+  y: 67.92159999847412
+  z: -280.3540411023426
+  yaw: -76.56114196777344
+  pitch: 11.355130195617676

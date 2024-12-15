@@ -44,8 +44,8 @@ world-settings:
     disable-mood-sounds: false
     use-async-lighting: false
     disable-teleportation-suffocation-check: false
-    optimize-explosions: false
     tnt-explosion-volume: 4.0
+    optimize-explosions: false
     portal-search-radius: 128
     cache-chunk-maps: false
     remove-invalid-mob-spawner-tile-entities: true
@@ -55,6 +55,11 @@ world-settings:
     lava-flow-speed:
       normal: 30
       nether: 10
+    nether-ceiling-void-damage: false
+    load-chunks:
+      enderpearls: false
+      tnt-entities: false
+      falling-blocks: false
     player-blocking-damage-multiplier: 0.5
     mob-spawner-tick-rate: 1
     squid-spawn-height:
@@ -72,11 +77,6 @@ world-settings:
     despawn-ranges:
       soft: 32
       hard: 128
-    nether-ceiling-void-damage: false
-    load-chunks:
-      enderpearls: false
-      tnt-entities: false
-      falling-blocks: false
     falling-block-height-nerf: 0
     remove-unloaded:
       enderpearls: true

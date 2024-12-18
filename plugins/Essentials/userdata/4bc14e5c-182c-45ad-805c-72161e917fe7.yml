@@ -16,15 +16,15 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1734481489060
-  login: 1734481461302
+  logout: 1734481612008
+  login: 1734481603707
 money: '0'
 last-account-name: Wirebit
 logoutlocation:
   world: 6db25809-c288-4f61-ad52-b0daa6a42e35
   world-name: world
-  x: -1119.3757516930991
-  y: 68.0
-  z: -282.03700146413365
-  yaw: 212.0479736328125
-  pitch: -10.256714820861816
+  x: -1116.118489353051
+  y: 69.0
+  z: -282.8671835371792
+  yaw: 217.2980499267578
+  pitch: 26.343280792236328

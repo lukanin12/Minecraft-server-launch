@@ -100,9 +100,6 @@ world-settings:
     save-structure-info: true
     max-bulk-chunks: 10
     max-entity-collisions: 8
-    dragon-death-sound-radius: 0
-    seed-village: 10387312
-    seed-feature: 14357617
     anti-xray:
       enabled: true
       engine-mode: 1
@@ -144,6 +141,9 @@ world-settings:
       bamboo-modifier: 100
       sweetberry-modifier: 100
       kelp-modifier: 100
+    dragon-death-sound-radius: 0
+    seed-village: 10387312
+    seed-feature: 14357617
     hunger:
       walk-exhaustion: 0.2
       sprint-exhaustion: 0.8

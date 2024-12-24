@@ -79,6 +79,13 @@ world-settings:
       exp: 3.0
       item: 2.5
     mob-spawn-range: 4
+    entity-activation-range:
+      animals: 32
+      monsters: 32
+      misc: 16
+      raiders: 48
+      tick-inactive-villagers: true
+      ignore-spectators: false
     entity-tracking-range:
       players: 48
       animals: 48
@@ -92,10 +99,7 @@ world-settings:
     random-light-updates: false
     save-structure-info: true
     max-bulk-chunks: 10
-    max-entity-collisions: 8
-    dragon-death-sound-radius: 0
-    seed-village: 10387312
-    seed-feature: 14357617
+    nerf-spawner-mobs: false
     growth:
       cactus-modifier: 100
       cane-modifier: 100
@@ -116,13 +120,6 @@ world-settings:
       bamboo-modifier: 100
       sweetberry-modifier: 100
       kelp-modifier: 100
-    entity-activation-range:
-      animals: 32
-      monsters: 32
-      misc: 16
-      raiders: 48
-      tick-inactive-villagers: true
-      ignore-spectators: false
     anti-xray:
       enabled: true
       engine-mode: 1
@@ -143,7 +140,10 @@ world-settings:
       replace-blocks:
       - 1
       - 5
-    nerf-spawner-mobs: false
+    max-entity-collisions: 8
+    dragon-death-sound-radius: 0
+    seed-village: 10387312
+    seed-feature: 14357617
     hunger:
       walk-exhaustion: 0.2
       sprint-exhaustion: 0.8

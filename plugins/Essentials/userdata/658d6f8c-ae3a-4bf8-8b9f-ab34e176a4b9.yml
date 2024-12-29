@@ -16,7 +16,15 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 0
+  logout: 1735436601892
   login: 1735436545541
 money: '0'
 last-account-name: ItsDewww
+logoutlocation:
+  world: 6db25809-c288-4f61-ad52-b0daa6a42e35
+  world-name: world
+  x: -1119.0001134518282
+  y: 68.0
+  z: -282.31587997100485
+  yaw: 205.5980224609375
+  pitch: -14.756707191467285

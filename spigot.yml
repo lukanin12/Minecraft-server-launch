@@ -118,7 +118,6 @@ world-settings:
     hopper-amount: 1
     random-light-updates: false
     save-structure-info: true
-    max-bulk-chunks: 10
     anti-xray:
       enabled: true
       engine-mode: 1
@@ -140,6 +139,7 @@ world-settings:
       - 1
       - 5
     nerf-spawner-mobs: false
+    max-bulk-chunks: 10
     max-entity-collisions: 8
     dragon-death-sound-radius: 0
     seed-village: 10387312

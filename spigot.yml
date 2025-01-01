@@ -78,7 +78,6 @@ world-settings:
     merge-radius:
       exp: 3.0
       item: 2.5
-    mob-spawn-range: 4
     anti-xray:
       enabled: true
       engine-mode: 1
@@ -133,6 +132,7 @@ world-settings:
       monsters: 48
       misc: 32
       other: 64
+    mob-spawn-range: 4
     ticks-per:
       hopper-transfer: 8
       hopper-check: 1

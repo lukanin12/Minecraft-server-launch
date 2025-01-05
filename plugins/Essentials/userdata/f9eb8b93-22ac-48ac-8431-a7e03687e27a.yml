@@ -16,15 +16,15 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1736080402032
+  logout: 1736080614232
   login: 1736080605931
 money: '0'
 last-account-name: Marcelektro
 logoutlocation:
   world: 6db25809-c288-4f61-ad52-b0daa6a42e35
   world-name: world
-  x: -1120.8530007328857
+  x: -1120.3354445823252
   y: 68.0
-  z: -281.6212649821989
-  yaw: 151.5199737548828
-  pitch: -6.165594100952148
+  z: -273.26080488711295
+  yaw: -12.399200439453125
+  pitch: 19.989233016967773

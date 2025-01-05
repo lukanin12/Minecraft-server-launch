@@ -16,7 +16,7 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1736080774931
+  logout: 1736080812032
   login: 1736080796330
 money: '0'
 last-account-name: ItzKorawith
@@ -24,7 +24,7 @@ logoutlocation:
   world: 6db25809-c288-4f61-ad52-b0daa6a42e35
   world-name: world
   x: -1118.5014582906167
-  y: 68.0
+  y: 68.00000019999999
   z: -272.3011725092074
-  yaw: 149.05227661132812
-  pitch: 3.731818914413452
+  yaw: -51.474647521972656
+  pitch: 12.59230899810791

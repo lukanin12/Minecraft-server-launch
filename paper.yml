@@ -55,11 +55,6 @@ world-settings:
     lava-flow-speed:
       normal: 30
       nether: 10
-    nether-ceiling-void-damage: false
-    load-chunks:
-      enderpearls: false
-      tnt-entities: false
-      falling-blocks: false
     player-blocking-damage-multiplier: 0.5
     mob-spawner-tick-rate: 1
     squid-spawn-height:
@@ -68,6 +63,15 @@ world-settings:
     max-growth-height:
       cactus: 3
       reeds: 3
+    game-mechanics:
+      boats-drop-boats: false
+      disable-player-crits: false
+      disable-chest-cat-detection: false
+      disable-end-credits: false
+    load-chunks:
+      enderpearls: false
+      tnt-entities: false
+      falling-blocks: false
     fishing-time-range:
       MinimumTicks: 100
       MaximumTicks: 900
@@ -82,11 +86,7 @@ world-settings:
       enderpearls: true
       tnt-entities: true
       falling-blocks: true
-    game-mechanics:
-      boats-drop-boats: false
-      disable-player-crits: false
-      disable-chest-cat-detection: false
-      disable-end-credits: false
+    nether-ceiling-void-damage: false
     disable-explosion-knockback: false
     water-over-lava-flow-speed: 5
     fix-cannons: false

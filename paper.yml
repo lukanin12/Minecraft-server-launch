@@ -44,17 +44,11 @@ world-settings:
     disable-mood-sounds: false
     use-async-lighting: false
     disable-teleportation-suffocation-check: false
-    optimize-explosions: false
     tnt-explosion-volume: 4.0
+    optimize-explosions: false
     portal-search-radius: 128
     cache-chunk-maps: false
     remove-invalid-mob-spawner-tile-entities: true
-    fast-drain:
-      lava: false
-      water: false
-    lava-flow-speed:
-      normal: 30
-      nether: 10
     nether-ceiling-void-damage: false
     load-chunks:
       enderpearls: false
@@ -77,6 +71,12 @@ world-settings:
     despawn-ranges:
       soft: 32
       hard: 128
+    fast-drain:
+      lava: false
+      water: false
+    lava-flow-speed:
+      normal: 30
+      nether: 10
     falling-block-height-nerf: 0
     remove-unloaded:
       enderpearls: true

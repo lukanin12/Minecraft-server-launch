@@ -16,15 +16,15 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1736138275389
-  login: 1736138271639
+  logout: 1736159942890
+  login: 1736159937029
 money: '0'
 last-account-name: Guailoudou
 logoutlocation:
   world: 6db25809-c288-4f61-ad52-b0daa6a42e35
   world-name: world
-  x: -1118.531737012705
-  y: 68.0
-  z: -280.3504753253913
-  yaw: 179.79808044433594
-  pitch: 15.843308448791504
+  x: -1118.3890088356488
+  y: 67.5
+  z: -277.94815357880674
+  yaw: 181.44810485839844
+  pitch: -26.306684494018555

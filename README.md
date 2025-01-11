@@ -1,4 +1,4 @@
-# RIP - August 4 2024 - January 10 2024 (84,000 minutes uptime, over 1 million commits across all branches, and ~15k commits a week)
+# RIP - August 4 2024 - January 10 2025 (84,000 minutes uptime, over 1 million commits across all branches, and ~15k commits a week)
  
 # Minecraft GitHub Actions Server
 

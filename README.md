@@ -1,5 +1,5 @@
 # Minecraft GitHub Actions Server
-
+RIP - August 4 2024 - January 10 2024 (84,000 minutes uptime, over 1 million commits across all branches, and ~15k commits a week)
 This repository contains the configuration for automatically deploying and managing a Minecraft server using GitHub Actions, playit.gg, and Cloudflare Tunnel.
 
 ## Features
